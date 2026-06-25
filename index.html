@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A5E66">
+
+<!-- ============ SEO ============ -->
+<title>MV Pilates Studio Μάνδρα | Pilates Reformer & Corporate Wellness Δυτική Αττική</title>
+<meta name="description" content="Εξατομικευμένο Pilates στη Μάνδρα με πραγματικά αποτελέσματα. Ανακούφιση από πόνους μέσης & αυχένα, βελτίωση στάσης και εταιρικά προγράμματα ευεξίας για επιχειρήσεις στη Δυτική Αττική.">
+<link rel="canonical" href="https://www.mvpilates.gr/"><!-- PLACEHOLDER: τελικό domain -->
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="GR-A1">
+<meta name="geo.placename" content="Μάνδρα, Δυτική Αττική">
+<link rel="icon" type="image/png" href="logo.png">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="business.business">
+<meta property="og:locale" content="el_GR">
+<meta property="og:title" content="MV Pilates Studio Μάνδρα | Pilates Reformer & Corporate Wellness">
+<meta property="og:description" content="Εξατομικευμένο Pilates που φέρνει πραγματικά αποτελέσματα — στη Μάνδρα Αττικής.">
+<meta property="og:url" content="https://www.mvpilates.gr/">
+<meta property="og:image" content="pictures.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+/* ====================================================================
+   MV PILATES STUDIO — rebuilt with LaTeX-inspired typographic discipline
+   · Single typeface: Arial (clean, consistent Greek rendering)
+   · Modular type scale · 8px baseline rhythm · constrained reading measure
+   · Golden-ratio section spacing · symmetric, centered composition
+   Palette: derived directly from logo.png — teal monogram (primary brand) ·
+            bronze/gold background (warm accent) · warm gold for primary CTAs ·
+            warm-cream neutrals. (Variable names retained; values are logo colours.)
+   ==================================================================== */
+:root{
+  /* ---- colour — sampled from logo.png ---- */
+  --stone:#F4F0E8; --paper:#FCFAF6; --paper-2:#ECE5D8;
+  --ink:#1E2E2D; --ink-soft:#4C5A58; --ink-mute:#85908D;
+  /* teal (logo monogram) drives all primary / brand UI */
+  --sage:#02909E; --sage-deep:#0A5E66; --sage-tint:#DBEFF1; --sage-line:#A9D6DB;
+  /* bronze / gold (logo background) — warm accent */
+  --clay:#B07A2A; --clay-tint:#F1E6D2;
+  /* warm gold reserved for primary CTAs */
+  --ember:#C8842A; --ember-dark:#A2661A;
+  --line:rgba(30,46,45,.12); --line-soft:rgba(30,46,45,.07);
+  --shadow:0 1px 2px rgba(30,46,45,.04), 0 22px 48px -28px rgba(30,46,45,.34);
+  --shadow-sm:0 1px 2px rgba(30,46,45,.05), 0 10px 26px -18px rgba(30,46,45,.30);
+
+  /* ---- typeface: Arial system stack ---- */
+  --sans:Arial, "Helvetica Neue", Helvetica, "Liberation Sans", sans-serif;
+
+  /* ---- modular type scale (ratio ≈ 1.25) ---- */
+  --fs-xs:.76rem; --fs-sm:.9rem; --fs-base:1.0625rem;
+  --fs-md:1.2rem; --fs-lg:1.5rem; --fs-xl:1.92rem; --fs-2xl:2.45rem;
+
+  /* ---- baseline rhythm: spacing as multiples of 0.5rem (8px) ---- */
+  --s1:.5rem; --s2:.75rem; --s3:1rem; --s4:1.5rem; --s5:2rem;
+  --s6:3rem; --s7:4rem; --s8:6rem;
+
+  /* ---- measure (LaTeX-ideal line length) ---- */
+  --measure:66ch; --measure-narrow:54ch;
+
+  --r:14px; --r-lg:22px; --maxw:1120px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;font-size:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--sans); color:var(--ink); background:var(--stone);
+  line-height:1.6; font-size:var(--fs-base); font-weight:400;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+:focus-visible{outline:2.5px solid var(--sage-deep);outline-offset:3px;border-radius:4px}
+
+/* ---------- type ---------- */
+.display{
+  font-weight:800;line-height:1.06;letter-spacing:-.022em;color:var(--sage-deep);
+  text-wrap:balance;
+}
+h1.display{font-size:clamp(2.5rem,6vw,4.1rem)}
+h2.display{font-size:clamp(1.95rem,4.4vw,3rem)}
+h3{font-weight:700;font-size:var(--fs-md);line-height:1.22;color:var(--sage-deep);letter-spacing:-.01em}
+.eyebrow{
+  font-weight:700;font-size:var(--fs-xs);letter-spacing:.26em;text-transform:uppercase;
+  color:var(--sage);display:inline-flex;align-items:center;gap:.7rem;
+}
+.eyebrow::before,.center .eyebrow::after,.hero .eyebrow::after{content:"";width:30px;height:1.5px;background:var(--sage-line);display:inline-block}
+.center .eyebrow,.hero .eyebrow{justify-content:center}
+.lede{font-size:clamp(1.06rem,1.7vw,1.22rem);color:var(--ink-soft);font-weight:400;line-height:1.66}
+p{max-width:var(--measure)}
+
+/* ---------- layout primitives ---------- */
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.2rem,4vw,2.5rem)}
+.section{padding-block:clamp(4rem,8.6vw,7rem);position:relative}
+.section--tint{background:var(--paper)}
+.section--deep{background:var(--sage-deep);color:#E2EFEE}
+.section--deep h2.display,.section--deep h3{color:#fff}
+.section--deep .lede{color:#BBD8D7}
+.section--deep .eyebrow{color:#8ECBD1}
+.section--deep .eyebrow::before,.section--deep .eyebrow::after{background:#2E767E}
+.center{text-align:center}
+.shead{max-width:46rem}
+.shead.center{margin-inline:auto}
+.shead.center p{margin-inline:auto}
+.shead .lede{margin-top:var(--s3)}
+.mt-1{margin-top:var(--s1)}.mt-2{margin-top:var(--s2)}.mt-3{margin-top:var(--s3)}
+.mt-4{margin-top:var(--s4)}.mt-5{margin-top:var(--s5)}.mt-6{margin-top:var(--s6)}
+
+/* ---------- the carriage rail (signature divider) ---------- */
+.rail{height:1.5px;background:linear-gradient(90deg,transparent,var(--sage-line) 14%,var(--sage-line) 86%,transparent);position:relative;max-width:var(--maxw);margin-inline:auto}
+.rail::before,.rail::after{content:"";position:absolute;top:50%;width:9px;height:9px;border-radius:50%;background:var(--stone);border:1.5px solid var(--sage);transform:translateY(-50%)}
+.rail::before{left:14%}.rail::after{right:14%}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-weight:700;font-size:var(--fs-sm);letter-spacing:.01em;padding:.92rem 1.6rem;border-radius:999px;transition:transform .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease,border-color .18s ease;will-change:transform;text-align:center;line-height:1.1}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--primary{background:var(--ember);color:#fff;box-shadow:0 10px 24px -10px rgba(200,132,42,.6)}
+.btn--primary:hover{background:var(--ember-dark);transform:translateY(-2px);box-shadow:0 16px 30px -12px rgba(200,132,42,.7)}
+.btn--ghost{background:transparent;color:var(--sage-deep);border:1.5px solid var(--sage-line)}
+.btn--ghost:hover{background:var(--sage-tint);border-color:var(--sage);transform:translateY(-2px)}
+.btn--light{background:#fff;color:var(--sage-deep)}
+.btn--light:hover{transform:translateY(-2px);box-shadow:0 14px 30px -14px rgba(0,0,0,.4)}
+.btn--block{width:100%}
+.btnrow{display:flex;flex-wrap:wrap;gap:.85rem}
+.center .btnrow{justify-content:center}
+.textlink{font-weight:700;font-size:var(--fs-sm);color:var(--sage);display:inline-flex;align-items:center;gap:.4rem;transition:gap .18s ease,color .18s ease}
+.textlink svg{width:15px;height:15px;transition:transform .18s ease}
+.textlink:hover{color:var(--sage-deep)}.textlink:hover svg{transform:translateX(3px)}
+
+/* ---------- header / nav ---------- */
+.nav{position:sticky;top:0;z-index:60;background:rgba(244,240,232,.84);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .25s,box-shadow .25s}
+.nav.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(30,46,45,.4)}
+.nav__in{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;flex:none}
+.brand__mark{width:44px;height:44px;flex:none;border-radius:10px;object-fit:cover;box-shadow:var(--shadow-sm)}
+.brand__txt{display:flex;flex-direction:column;line-height:1}
+.brand__name{font-weight:800;font-size:1.22rem;color:var(--sage-deep);letter-spacing:.01em}
+.brand__sub{font-size:.58rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-top:4px}
+.navlinks{display:flex;align-items:center;gap:1.7rem}
+.navlinks a{font-weight:600;font-size:var(--fs-sm);color:var(--ink-soft);transition:color .18s}
+.navlinks a:hover{color:var(--sage-deep)}
+.nav__cta{display:flex;align-items:center;gap:.9rem}
+.nav__phone{font-weight:700;font-size:var(--fs-sm);color:var(--sage-deep);display:inline-flex;align-items:center;gap:.45rem;white-space:nowrap}
+.nav__phone svg{width:16px;height:16px;color:var(--sage)}
+.burger{display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);align-items:center;justify-content:center;flex-direction:column;gap:4px}
+.burger span{width:18px;height:2px;background:var(--sage-deep);border-radius:2px;transition:.25s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- hero (centered, symmetric) ---------- */
+.hero{position:relative;overflow:hidden;text-align:center;
+  background:
+    radial-gradient(110% 70% at 50% -10%,rgba(2,144,158,.12),transparent 60%),
+    radial-gradient(80% 60% at 50% 120%,rgba(176,122,42,.12),transparent 55%),var(--stone);
+  padding-block:clamp(2.8rem,5.5vw,4.6rem) clamp(2.4rem,4.5vw,3.6rem)}
+.hero__copy{max-width:54rem;margin-inline:auto}
+.hero h1{margin-top:var(--s3)}
+.hero h1 em{font-style:normal;color:var(--clay)}
+.hero__sub{margin:var(--s4) auto 0;font-size:clamp(1.06rem,1.7vw,1.2rem);color:var(--ink-soft);max-width:42rem}
+.hero .btnrow{margin-top:var(--s5)}
+.trust{margin-top:var(--s5);display:flex;flex-wrap:wrap;gap:.6rem .55rem;justify-content:center}
+.trust__item{display:inline-flex;align-items:center;gap:.5rem;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.5rem .95rem;font-size:.82rem;font-weight:600;color:var(--ink-soft)}
+.trust__item svg{width:15px;height:15px;color:var(--sage);flex:none}
+.stars{color:var(--clay);letter-spacing:1px;font-size:.85rem}
+
+/* hero triptych — symmetric three-frame composition */
+.triptych{display:grid;grid-template-columns:1fr 1.16fr 1fr;gap:clamp(.7rem,1.6vw,1.2rem);align-items:center;margin-top:clamp(2.6rem,5vw,3.6rem)}
+.frame{position:relative;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--sage-tint)}
+.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.frame--side{aspect-ratio:3/4.4}
+.frame--main{aspect-ratio:3/4.8}
+.hero__badge{position:absolute;z-index:3;top:14px;left:14px;background:var(--sage-deep);color:#fff;border-radius:14px;padding:.6rem .8rem;box-shadow:var(--shadow);text-align:left}
+.hero__badge .n{font-size:1.5rem;line-height:1;color:#fff;font-weight:800}
+.hero__badge .l{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#A6D1D6;margin-top:.2rem}
+.hero__ribbon{position:absolute;z-index:3;top:14px;right:14px;background:rgba(251,250,246,.92);backdrop-filter:blur(4px);border:1px solid var(--clay-tint);border-radius:12px;padding:.5rem .7rem;display:flex;align-items:center;gap:.45rem;font-size:.7rem;font-weight:700;color:var(--sage-deep);max-width:160px;text-align:left}
+.hero__ribbon svg{width:18px;height:18px;color:var(--clay);flex:none}
+
+/* ---------- generic cards ---------- */
+.grid{display:grid;gap:1.2rem}
+.g-2{grid-template-columns:repeat(2,1fr)}
+.g-3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:1.7rem;box-shadow:var(--shadow-sm);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--sage-line)}
+.card__icon{width:48px;height:48px;border-radius:13px;background:var(--sage-tint);display:flex;align-items:center;justify-content:center;color:var(--sage-deep);margin-bottom:1.05rem}
+.card__icon svg{width:23px;height:23px}
+.card h3{margin-bottom:.5rem}
+.card p{color:var(--ink-soft);font-size:var(--fs-sm)}
+
+/* split / media sections — balanced two-column */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.8rem,4.5vw,3.6rem);align-items:center}
+.media{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--sage-tint);position:relative}
+.media img{width:100%;height:100%;object-fit:cover;display:block}
+.media--portrait{aspect-ratio:4/4.6}
+.media--tall{aspect-ratio:4/4.9}
+
+/* result list */
+.results{display:grid;gap:.75rem;margin-top:.4rem}
+.results li{display:flex;gap:.7rem;align-items:flex-start;font-weight:600;color:var(--ink);font-size:var(--fs-base);list-style:none}
+.results li svg{width:20px;height:20px;color:var(--sage);flex:none;margin-top:3px}
+
+/* clinical-pilates differentiator callout */
+.clinical{display:flex;gap:.85rem;align-items:flex-start;padding:1.05rem 1.25rem;background:var(--sage-tint);border:1px solid var(--sage-line);border-left:4px solid var(--sage);border-radius:14px}
+.clinical svg{width:26px;height:26px;color:var(--sage-deep);flex:none;margin-top:2px}
+.clinical b{display:block;color:var(--sage-deep);font-size:1.04rem;line-height:1.3;margin-bottom:.2rem}
+.clinical span{font-size:var(--fs-sm);color:var(--ink-soft)}
+
+/* ---------- how it works (rail steps) ---------- */
+.steps{position:relative;margin-top:var(--s6)}
+.steps__rail{position:absolute;top:34px;left:8%;right:8%;height:2px;background:repeating-linear-gradient(90deg,var(--sage-line) 0 10px,transparent 10px 18px);z-index:0}
+.steps__grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.1rem;position:relative;z-index:1}
+.step{text-align:center}
+.step__dot{width:68px;height:68px;margin:0 auto 1.1rem;border-radius:50%;background:var(--paper);border:2px solid var(--sage-line);display:flex;align-items:center;justify-content:center;font-size:1.55rem;font-weight:800;color:var(--sage-deep);box-shadow:var(--shadow-sm);transition:transform .2s,border-color .2s,background .2s}
+.step:hover .step__dot{transform:translateY(-4px);border-color:var(--ember);background:#fff}
+.step h3{font-size:1.08rem;margin-bottom:.35rem}
+.step p{font-size:var(--fs-sm);color:var(--ink-soft);max-width:none}
+
+/* ---------- services ---------- */
+.svc{display:flex;flex-direction:column;gap:.65rem}
+.svc__top{display:flex;align-items:center;gap:.9rem}
+.svc p{color:var(--ink-soft);font-size:var(--fs-sm);flex:1;max-width:none}
+.svc .textlink{margin-top:.3rem}
+.svc--feat{background:var(--sage-deep);color:#E2EFEE;border-color:var(--sage-deep)}
+.svc--feat h3{color:#fff}.svc--feat p{color:#BBD8D7}
+.svc--feat .card__icon{background:rgba(255,255,255,.1);color:#fff}
+.svc--feat .textlink{color:#A6D1D6}.svc--feat .textlink:hover{color:#fff}
+
+/* ---------- gallery strip ---------- */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.7rem,1.6vw,1.1rem);margin-top:var(--s6)}
+.gtile{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);aspect-ratio:4/4.6;background:var(--sage-tint)}
+.gtile img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.gtile:hover img{transform:scale(1.05)}
+.gtile__cap{position:absolute;inset:auto .7rem .7rem;background:rgba(30,46,45,.62);backdrop-filter:blur(3px);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.04em;padding:.4rem .65rem;border-radius:9px}
+
+/* ---------- testimonials carousel ---------- */
+.tcar{position:relative;margin-top:var(--s6);max-width:50rem;margin-inline:auto}
+.tcar__view{overflow:hidden;border-radius:var(--r-lg)}
+.tcar__track{display:flex;transition:transform .5s cubic-bezier(.6,.05,.2,1)}
+.tslide{flex:0 0 100%;padding:clamp(1.8rem,4vw,3rem);background:var(--paper);border:1px solid var(--line);text-align:center}
+.tslide .stars{font-size:1.05rem;margin-bottom:1rem}
+.tquote{font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.42;color:var(--sage-deep);font-weight:600;max-width:none;letter-spacing:-.01em}
+.tmeta{display:flex;align-items:center;justify-content:center;gap:.85rem;margin-top:var(--s4)}
+.tavatar{width:48px;height:48px;border-radius:50%;background:var(--sage-tint);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--sage-deep);font-size:1.05rem;flex:none}
+.tname{font-weight:800;font-size:.95rem;color:var(--ink)}
+.tsrc{font-size:.8rem;color:var(--ink-mute);font-weight:600}
+.tcar__nav{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:var(--s4)}
+.tcar__btn{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--sage-line);display:flex;align-items:center;justify-content:center;color:var(--sage-deep);transition:.18s}
+.tcar__btn:hover{background:var(--sage-tint);border-color:var(--sage)}
+.tcar__btn svg{width:18px;height:18px}
+.tdots{display:flex;gap:.5rem}
+.tdot{width:8px;height:8px;border-radius:50%;background:var(--sage-line);transition:.2s}
+.tdot.active{background:var(--sage);width:24px;border-radius:5px}
+.review-note{margin-top:1.1rem;font-size:.78rem;color:var(--ink-mute);text-align:center;max-width:none}
+
+/* ---------- corporate ---------- */
+.corp__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.8rem,4vw,3.4rem);align-items:start}
+.benefit{display:flex;gap:.85rem;padding:1.05rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.benefit:last-child{border-bottom:none}
+.benefit svg{width:22px;height:22px;color:#8ECBD1;flex:none;margin-top:3px}
+.benefit b{display:block;color:#fff;font-size:1.02rem;margin-bottom:.15rem}
+.benefit span{font-size:var(--fs-sm);color:#BBD8D7}
+.corp__how{margin-top:var(--s5);display:grid;gap:.6rem}
+.corp__how li{display:flex;gap:.7rem;font-size:var(--fs-sm);color:#BBD8D7;list-style:none}
+.corp__how b{color:#fff;font-weight:800;min-width:24px}
+
+/* ---------- forms ---------- */
+.form{background:var(--paper);border-radius:var(--r-lg);padding:clamp(1.5rem,3.5vw,2.4rem);box-shadow:var(--shadow);border:1px solid var(--line)}
+.form h3{margin-bottom:.4rem}
+.form .lede{font-size:.95rem;margin-bottom:1.4rem}
+.field{margin-bottom:1rem}
+.field label{display:block;font-weight:700;font-size:.82rem;color:var(--sage-deep);margin-bottom:.4rem;letter-spacing:.01em}
+.field input,.field select,.field textarea{width:100%;padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:12px;font-family:inherit;font-size:.97rem;color:var(--ink);background:var(--stone);transition:border-color .18s,box-shadow .18s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--sage);box-shadow:0 0 0 3px var(--sage-tint)}
+.field input.err,.field select.err{border-color:#C0492E;box-shadow:0 0 0 3px rgba(192,73,46,.12)}
+.field .msg{font-size:.74rem;color:#C0492E;margin-top:.3rem;display:none}
+.field .msg.show{display:block}
+.form__row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form__ok{display:none;text-align:center;padding:1.5rem 0}
+.form__ok.show{display:block}
+.form__ok svg{width:54px;height:54px;color:var(--sage);margin:0 auto 1rem}
+.form__ok h3{margin-bottom:.4rem}
+.form__ok p{color:var(--ink-soft);font-size:.95rem;margin-inline:auto}
+.privacy{font-size:.74rem;color:var(--ink-mute);margin-top:.8rem;text-align:center;max-width:none}
+
+/* ---------- geo / local ---------- */
+.areas{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:var(--s4);justify-content:center}
+.areachip{background:var(--paper);border:1px solid var(--sage-line);color:var(--sage-deep);font-weight:700;font-size:.9rem;padding:.55rem 1.05rem;border-radius:999px;display:inline-flex;align-items:center;gap:.45rem}
+.areachip svg{width:14px;height:14px;color:var(--sage)}
+.kwline{margin:var(--s4) auto 0;font-size:.9rem;color:var(--ink-mute);line-height:1.9;text-align:center;max-width:54rem}
+.kwline b{color:var(--sage-deep)}
+
+/* ---------- about ---------- */
+.about__list{display:grid;gap:.6rem;margin-top:var(--s4)}
+.about__list li{display:flex;gap:.7rem;font-weight:600;color:var(--ink);list-style:none;font-size:var(--fs-base)}
+.about__list svg{width:19px;height:19px;color:var(--clay);flex:none;margin-top:3px}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:48rem;margin:var(--s6) auto 0;display:grid;gap:.7rem}
+.fitem{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:border-color .2s}
+.fitem.open{border-color:var(--sage-line)}
+.fq{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.15rem 1.4rem;text-align:left;font-weight:700;font-size:1.0rem;color:var(--sage-deep)}
+.fq__ico{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--sage-line);display:flex;align-items:center;justify-content:center;flex:none;transition:.25s;color:var(--sage)}
+.fitem.open .fq__ico{background:var(--sage-deep);border-color:var(--sage-deep);color:#fff;transform:rotate(45deg)}
+.fq__ico svg{width:14px;height:14px}
+.fa{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.fa__in{padding:0 1.4rem 1.25rem;color:var(--ink-soft);font-size:var(--fs-sm)}
+.fa__in p{max-width:none}
+
+/* ---------- final cta band ---------- */
+.cta-band{background:radial-gradient(120% 120% at 100% 0%,rgba(176,122,42,.28),transparent 55%),var(--sage-deep);border-radius:var(--r-lg);padding:clamp(2.4rem,5vw,4rem);text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-band h2{color:#fff}
+.cta-band .lede{color:#BBD8D7;max-width:34rem;margin:1rem auto 0}
+.cta-band .btnrow{justify-content:center;margin-top:var(--s5)}
+
+/* ---------- footer ---------- */
+.foot{background:var(--ink);color:#B7BBB2;padding-block:3.5rem 0;font-size:var(--fs-sm)}
+.foot a:hover{color:#fff}
+.foot__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:2rem}
+.foot__brand .brand__name{color:#fff}
+.foot__brand p{margin-top:1rem;max-width:280px;color:#9AA094}
+.foot h4{color:#fff;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:1.1rem}
+.foot ul{list-style:none;display:grid;gap:.6rem}
+.foot__contact li{display:flex;gap:.6rem;align-items:flex-start;color:#9AA094}
+.foot__contact svg{width:16px;height:16px;color:#4E8E95;flex:none;margin-top:3px}
+.socials{display:flex;gap:.7rem;margin-top:1.2rem}
+.socials a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;color:#C7CBC1;transition:.18s}
+.socials a:hover{background:var(--sage);color:#fff;transform:translateY(-2px)}
+.socials svg{width:18px;height:18px}
+.mapwrap{margin-top:var(--s6);border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,.1)}
+.mapwrap iframe{width:100%;height:300px;border:0;display:block;filter:grayscale(.25) contrast(.95)}
+.ig{margin-top:var(--s6)}
+.ig__head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}
+.ig__head h4{margin:0}
+.ig__grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem}
+.ig__cell{aspect-ratio:1;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.ig__cell img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease,opacity .2s}
+.ig__cell:hover img{transform:scale(1.08)}
+.foot__bottom{margin-top:var(--s6);border-top:1px solid rgba(255,255,255,.08);padding-block:1.5rem;display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;align-items:center;color:#7E847A;font-size:.82rem}
+.foot__bottom a{color:#9AA094}
+
+/* ---------- sticky mobile CTA ---------- */
+.mobicta{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;gap:.6rem;padding:.7rem .9rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(252,250,246,.92);backdrop-filter:blur(12px);border-top:1px solid var(--line);box-shadow:0 -8px 24px -18px rgba(30,46,45,.5)}
+.mobicta .btn{flex:1;padding:.9rem .6rem;font-size:.9rem}
+.mobicta .btn--ghost{flex:0 0 52px}
+
+/* ---------- reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(22px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1!important;transform:none!important}
+  .tcar__track{transition:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .split,.corp__grid{grid-template-columns:1fr}
+  .split .media{order:-1;max-width:34rem;margin-inline:auto;width:100%;aspect-ratio:5/4}
+  .triptych{grid-template-columns:1fr;max-width:24rem;margin-inline:auto;gap:1rem}
+  .frame--side,.frame--main{aspect-ratio:5/4}
+  .steps__grid{grid-template-columns:repeat(2,1fr);gap:2rem}
+  .steps__rail{display:none}
+  .gallery{grid-template-columns:1fr 1fr}
+  .ig__grid{grid-template-columns:repeat(3,1fr)}
+  .foot__grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .navlinks,.nav__phone{display:none}
+  .burger{display:flex}
+  .nav__cta .btn{display:none}
+  .navlinks.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--paper);padding:1.2rem;gap:.4rem;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+  .navlinks.open a{padding:.6rem 0;font-size:1rem;width:100%;border-bottom:1px solid var(--line-soft)}
+  .navlinks.open .btn{display:inline-flex;margin-top:.6rem}
+  .g-2,.g-3,.form__row{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .mobicta{display:flex}
+  body{padding-bottom:76px}
+  .foot__grid{grid-template-columns:1fr}
+  .ig__grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:430px){
+  .steps__grid{grid-template-columns:1fr}
+  .trust__item{font-size:.78rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a href="#top" class="brand" aria-label="MV Pilates Studio — Αρχική">
+      <img class="brand__mark" src="logo.png" alt="MV Pilates Studio λογότυπο" width="44" height="44">
+      <span class="brand__txt">
+        <span class="brand__name">MV Pilates</span>
+        <span class="brand__sub">Studio · Μάνδρα</span>
+      </span>
+    </a>
+    <nav class="navlinks" id="navlinks" aria-label="Κύρια πλοήγηση">
+      <a href="#why">Γιατί εμείς</a>
+      <a href="#how">Πώς λειτουργεί</a>
+      <a href="#services">Υπηρεσίες</a>
+      <a href="#corporate">Εταιρείες</a>
+      <a href="#faq">Συχνές ερωτήσεις</a>
+    </nav>
+    <div class="nav__cta">
+      <a href="tel:+302110082697" class="nav__phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        21 1008 2697
+      </a>
+      <a href="#trial" class="btn btn--primary">Δωρεάν Δοκιμαστική Προπόνηση</a>
+      <button class="burger" id="burger" aria-label="Μενού" aria-expanded="false" aria-controls="navlinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__copy">
+      <span class="eyebrow" style="justify-content:center">Pilates Reformer · Μάνδρα Αττικής</span>
+      <h1 class="display">Το Pilates που φέρνει <em>πραγματικά</em> αποτελέσματα.</h1>
+      <p class="hero__sub">Βελτιώστε τη στάση σας, μειώστε τους πόνους στη μέση και τον αυχένα και αποκτήστε ένα πιο δυνατό, λειτουργικό σώμα — με εξατομικευμένη καθοδήγηση στο MV Pilates Studio.</p>
+      <div class="btnrow">
+        <a href="#trial" class="btn btn--primary">
+          Κλείσε τη δωρεάν δοκιμαστική προπόνηση σου
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#corporate" class="btn btn--ghost">Ζητήστε Εταιρική Προσφορά</a>
+      </div>
+      <div class="trust">
+        <span class="trust__item"><span class="stars">★★★★★</span> 5.0 Google Reviews</span>
+        <span class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V5l-8-3Z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg> Εθνική Διάκριση «Αετοί Φ.Α. 2025»</span>
+        <span class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4" stroke-linecap="round" stroke-linejoin="round"/></svg> Μοναδικό πραγματικό Clinical Pilates</span>
+        <span class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20a8 8 0 0 1 16 0" stroke-linecap="round"/></svg> 100% Εξατομικευμένη Προσέγγιση</span>
+        <span class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg> Ευέλικτα Ραντεβού</span>
+      </div>
+    </div>
+
+    <!-- symmetric three-frame composition of real studio photos -->
+    <div class="triptych reveal">
+      <figure class="frame frame--side">
+        <img src="pictures2.png" alt="Χώρος Pilates Reformer στο MV Pilates Studio" loading="lazy">
+      </figure>
+      <figure class="frame frame--main">
+        <span class="hero__badge"><span class="n">5.0★</span><span class="l">Google Reviews</span></span>
+        <span class="hero__ribbon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V5l-8-3Z" stroke-linejoin="round"/></svg>Αετοί Φ.Α. 2025</span>
+        <img src="pictures.png" alt="Ασκούμενοι σε συνεδρία Pilates Reformer στο φωτεινό studio της Μάνδρας" loading="lazy">
+      </figure>
+      <figure class="frame frame--side">
+        <img src="4.png" alt="Premium χώρος με εξοπλισμό Reformer" loading="lazy">
+      </figure>
+    </div>
+  </div>
+  <div class="wrap mt-6"><div class="rail"></div></div>
+</section>
+
+<!-- ===================== WHY MV PILATES ===================== -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <figure class="media media--tall"><img src="3.png" alt="Λεπτομέρειες από τον χώρο του MV Pilates Studio" loading="lazy"></figure>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Γιατί μας επιλέγουν</span>
+        <h2 class="display mt-2">Γιατί οι ασκούμενοί μας δεν σταματούν να επιστρέφουν</h2>
+        <p class="lede mt-3">Οι περισσότεροι άνθρωποι δεν ψάχνουν απλώς ένα μάθημα Pilates. Ψάχνουν λύση — για τον πόνο στη μέση, τον αυχένα, την κακή στάση και την έλλειψη ενέργειας.</p>
+        <p class="mt-3" style="color:var(--ink-soft)">Στο MV Pilates Studio δεν υπάρχουν τυποποιημένα μαθήματα ούτε απρόσωπες ομαδικές προπονήσεις. Κάθε συνεδρία σχεδιάζεται αποκλειστικά για εσάς — το σώμα σας, τους στόχους σας και το επίπεδό σας.</p>
+        <div class="clinical mt-5">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><b>Το μοναδικό studio που κάνει πραγματικό Clinical Pilates στη Δυτική Αττική.</b>Κλινική μεθοδολογία και επανεκπαίδευση της κίνησης — όχι απλώς άσκηση, αλλά στοχευμένη αποκατάσταση και πρόληψη.</span>
+        </div>
+        <ul class="results mt-5">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Ανακούφιση από πόνους μέσης &amp; αυχένα</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Βελτίωση στάσης σώματος</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Αύξηση δύναμης και ευλυγισίας</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Καλύτερη καθημερινή λειτουργικότητα &amp; ενέργεια</li>
+        </ul>
+        <a href="#trial" class="textlink mt-5">Κλείσε τη δωρεάν δοκιμαστική προπόνηση σου <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMPETITIVE ADVANTAGE ===================== -->
+<section class="section section--tint" id="advantage">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">Το ανταγωνιστικό μας πλεονέκτημα</span>
+      <h2 class="display mt-2">Όχι ένα ακόμη μάθημα. Μια μέθοδος με έμφαση στο αποτέλεσμα.</h2>
+    </div>
+    <div class="grid g-3 mt-6">
+      <div class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20a8 8 0 0 1 16 0" stroke-linecap="round"/></svg></div>
+        <h3>Εξειδικευμένη &amp; προσωποποιημένη καθοδήγηση</h3>
+        <p>Βαθιά γνώση, μεθοδικότητα και πραγματικό ενδιαφέρον για κάθε ασκούμενο — σε κάθε επανάληψη.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Πραγματικά, μετρήσιμα αποτελέσματα</h3>
+        <p>Λιγότερος πόνος, καλύτερη στάση, περισσότερη δύναμη και ευλυγισία — όπως τα περιγράφουν οι ίδιοι οι ασκούμενοί μας.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 1.9 5.8H20l-4.9 3.6 1.9 5.8L12 14.6 7 18.2l1.9-5.8L4 8.8h6.1L12 3Z" stroke-linejoin="round"/></svg></div>
+        <h3>Premium &amp; φιλόξενος χώρος</h3>
+        <p>Σύγχρονο, απόλυτα καθαρό και ήρεμο περιβάλλον, σχεδιασμένο για συγκέντρωση και ασφάλεια.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Ευελιξία που σας εξυπηρετεί</h3>
+        <p>Το πρόγραμμά σας δεν προσαρμόζεται στο Pilates. Το Pilates προσαρμόζεται στο δικό σας πρόγραμμα.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.5l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.7 1-1a5.5 5.5 0 0 0 0-7.7Z" stroke-linejoin="round"/></svg></div>
+        <h3>Ανθρώπινη σχέση &amp; συνεχής υποστήριξη</h3>
+        <p>Δεν είστε ένας αριθμός. Σας γνωρίζουμε, σας παρακολουθούμε και σας στηρίζουμε σε όλη την πορεία.</p>
+      </div>
+      <div class="card svc--feat reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V5l-8-3Z" stroke-linejoin="round"/></svg></div>
+        <h3>Το μοναδικό αμιγές Reformer studio στη Δυτική Αττική</h3>
+        <p>Εξειδίκευση στον Reformer — όχι ένα γυμναστήριο με μερικά μηχανήματα, αλλά ένας χώρος αφιερωμένος στη μέθοδο.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">Πώς λειτουργεί</span>
+      <h2 class="display mt-2">Από την πρώτη συνεδρία στα αποτελέσματα που μένουν</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="steps__rail" aria-hidden="true"></div>
+      <div class="steps__grid">
+        <div class="step"><div class="step__dot">1</div><h3>Αρχική Αξιολόγηση</h3><p>Δωρεάν στη δοκιμαστική προπόνηση — κατανοούμε το σώμα, το ιστορικό και τους στόχους σας.</p></div>
+        <div class="step"><div class="step__dot">2</div><h3>Εξατομικευμένο Πλάνο</h3><p>Σχεδιασμένο γύρω από τους δικούς σας στόχους και περιορισμούς.</p></div>
+        <div class="step"><div class="step__dot">3</div><h3>Στοχευμένες Συνεδρίες</h3><p>Reformer ή Personal, με συνεχή προσαρμογή σε κάθε επανάληψη.</p></div>
+        <div class="step"><div class="step__dot">4</div><h3>Παρακολούθηση Προόδου</h3><p>Πραγματικά, μετρήσιμα αποτελέσματα — όχι αόριστες υποσχέσεις.</p></div>
+        <div class="step"><div class="step__dot">5</div><h3>Συνεχής Υποστήριξη</h3><p>Ευέλικτο πρόγραμμα και καθοδήγηση που σας κρατά σταθερά σε πορεία.</p></div>
+      </div>
+    </div>
+    <div class="center mt-6 reveal"><a href="#trial" class="btn btn--primary">Κλείσε τη δωρεάν δοκιμαστική προπόνηση σου</a></div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="section section--tint" id="services">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">Υπηρεσίες &amp; Προγράμματα</span>
+      <h2 class="display mt-2">Επιλέξτε τη διαδρομή που ταιριάζει σε εσάς</h2>
+    </div>
+    <div class="grid g-3 mt-6">
+      <div class="card svc reveal">
+        <div class="svc__top"><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="8" width="20" height="8" rx="2"/><path d="M6 8V6m12 2V6M6 18v-2m12 2v-2" stroke-linecap="round"/></svg></div><h3>Pilates Reformer</h3></div>
+        <p>Δυναμική, χαμηλής καταπόνησης προπόνηση σε εξοπλισμό Reformer, με μέγιστη προσοχή στη σωστή τεχνική. Ομαδικό (μικρά γκρουπ) ή Personal.</p>
+        <a href="#trial" class="textlink">Μάθετε περισσότερα <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="card svc reveal">
+        <div class="svc__top"><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="3.2"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0" stroke-linecap="round"/></svg></div><h3>Personal Training (1:1)</h3></div>
+        <p>Απόλυτα εξατομικευμένη καθοδήγηση, σχεδιασμένη γύρω από τους στόχους, το ιστορικό και τον ρυθμό σας.</p>
+        <a href="#trial" class="textlink">Μάθετε περισσότερα <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="card svc reveal">
+        <div class="svc__top"><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M8 7c-3 0-4 2-4 4s1 4 4 4m8-8c3 0 4 2 4 4s-1 4-4 4" stroke-linecap="round"/></svg></div><h3>Προγράμματα για Πόνους Μέσης &amp; Αυχένα</h3></div>
+        <p>Στοχευμένα προγράμματα ενδυνάμωσης και κινητικότητας για ανακούφιση από χρόνιους πόνους και πρόληψη υποτροπών.</p>
+        <a href="#trial" class="textlink">Μάθετε περισσότερα <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="card svc reveal">
+        <div class="svc__top"><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4" stroke-linecap="round"/></svg></div><h3>Pilates για Εργαζόμενους Γραφείου</h3></div>
+        <p>Συνεδρίες που αντισταθμίζουν τις επιπτώσεις της καθιστικής εργασίας: στάση, αυχένας, μέση και ενέργεια.</p>
+        <a href="#trial" class="textlink">Μάθετε περισσότερα <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="card svc svc--feat reveal">
+        <div class="svc__top"><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V8l9-5 9 5v13" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke-linejoin="round"/></svg></div><h3>Εταιρικά Προγράμματα Ευεξίας</h3></div>
+        <p>Ευέλικτα προγράμματα για ομάδες &amp; επιχειρήσεις, στο studio ή on-site, με μετρήσιμα οφέλη για την υγεία και την απόδοση.</p>
+        <a href="#corporate" class="textlink">Ζητήστε εταιρική προσφορά <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="card svc reveal" style="background:transparent;border-style:dashed;box-shadow:none;justify-content:center;align-items:center;text-align:center">
+        <h3 style="margin-bottom:.4rem">Δεν είστε σίγουροι τι χρειάζεστε;</h3>
+        <p style="text-align:center">Κλείσε μια δωρεάν δοκιμαστική προπόνηση — θα βρούμε μαζί τη σωστή διαδρομή για εσένα.</p>
+        <a href="#trial" class="btn btn--primary mt-2">Δωρεάν Δοκιμαστική Προπόνηση</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STUDIO GALLERY ===================== -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">Ο χώρος μας</span>
+      <h2 class="display mt-2">Ένα studio σχεδιασμένο για να επιστρέφετε</h2>
+      <p class="lede mt-3">Φωτεινός, καθαρός και ήρεμος χώρος στη Μάνδρα, αποκλειστικά αφιερωμένος στη μέθοδο Reformer.</p>
+    </div>
+    <div class="gallery reveal">
+      <figure class="gtile"><img src="pictures.png" alt="Συνεδρία Pilates Reformer στο φωτεινό studio" loading="lazy"><figcaption class="gtile__cap">Ομαδικά Reformer</figcaption></figure>
+      <figure class="gtile"><img src="7.png" alt="Hands-on καθοδήγηση από τον Marios" loading="lazy"><figcaption class="gtile__cap">Hands-on καθοδήγηση</figcaption></figure>
+      <figure class="gtile"><img src="4.png" alt="Premium ατμόσφαιρα του studio" loading="lazy"><figcaption class="gtile__cap">Premium ατμόσφαιρα</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOCIAL PROOF ===================== -->
+<section class="section section--tint" id="reviews">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">★★★★★ 5.0 στο Google</span>
+      <h2 class="display mt-2">Τι λένε οι άνθρωποι που μας εμπιστεύονται</h2>
+    </div>
+    <div class="tcar reveal" id="tcar">
+      <div class="tcar__view">
+        <div class="tcar__track" id="ttrack">
+          <!-- PLACEHOLDER testimonials — αντικαταστήστε με πραγματικές αξιολογήσεις Google (όνομα + φωτογραφία) -->
+          <figure class="tslide">
+            <div class="stars">★★★★★</div>
+            <blockquote class="tquote">«Δείγμα αξιολόγησης — εδώ μπαίνει πραγματικό σχόλιο Google που μιλά για ανακούφιση από τον πόνο στη μέση και την προσωπική καθοδήγηση.»</blockquote>
+            <figcaption class="tmeta"><span class="tavatar">Α</span><span style="text-align:left"><span class="tname">Όνομα Πελάτη</span><br><span class="tsrc">Αξιολόγηση Google · 5.0</span></span></figcaption>
+          </figure>
+          <figure class="tslide">
+            <div class="stars">★★★★★</div>
+            <blockquote class="tquote">«Δείγμα αξιολόγησης — σχόλιο που τονίζει τον καθαρό, premium χώρο και την ευελιξία στα ραντεβού.»</blockquote>
+            <figcaption class="tmeta"><span class="tavatar">Μ</span><span style="text-align:left"><span class="tname">Όνομα Πελάτη</span><br><span class="tsrc">Αξιολόγηση Google · 5.0</span></span></figcaption>
+          </figure>
+          <figure class="tslide">
+            <div class="stars">★★★★★</div>
+            <blockquote class="tquote">«Δείγμα αξιολόγησης — σχόλιο για τη βελτίωση της στάσης σώματος και τα πραγματικά αποτελέσματα μετά από λίγες εβδομάδες.»</blockquote>
+            <figcaption class="tmeta"><span class="tavatar">Κ</span><span style="text-align:left"><span class="tname">Όνομα Πελάτη</span><br><span class="tsrc">Αξιολόγηση Google · 5.0</span></span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="tcar__nav">
+        <button class="tcar__btn" id="tprev" aria-label="Προηγούμενη αξιολόγηση"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="tdots" id="tdots"></div>
+        <button class="tcar__btn" id="tnext" aria-label="Επόμενη αξιολόγηση"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+      <p class="review-note">⚠ Δείγματα — αντικαταστήστε με πραγματικές αξιολογήσεις από το Google Business Profile σας.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CORPORATE WELLNESS ===================== -->
+<section class="section section--deep" id="corporate">
+  <div class="wrap corp__grid">
+    <div class="reveal">
+      <span class="eyebrow">Corporate Wellness · Δυτική Αττική</span>
+      <h2 class="display mt-2">Επενδύστε στην υγεία και την απόδοση των ανθρώπων σας</h2>
+      <p class="lede mt-3">Οι εργαζόμενοι που αισθάνονται καλύτερα, αποδίδουν καλύτερα. Μειώστε απουσίες, βελτιώστε την ευεξία και ενισχύστε το employer branding της εταιρείας σας.</p>
+      <div class="mt-5">
+        <div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Μείωση μυοσκελετικών προβλημάτων &amp; πόνων</b><span>Λιγότερες ενοχλήσεις μέσης/αυχένα από την καθιστική εργασία.</span></div></div>
+        <div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Βελτίωση συγκέντρωσης &amp; παραγωγικότητας</b><span>Πιο ξεκούραστοι, πιο ενεργοί, πιο αποδοτικοί.</span></div></div>
+        <div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Ενίσχυση ικανοποίησης &amp; διατήρησης προσωπικού</b><span>Μια παροχή που οι άνθρωποι εκτιμούν πραγματικά.</span></div></div>
+        <div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Ισχυρό Employer Branding</b><span>Δείξτε έμπρακτα ότι νοιάζεστε για τους ανθρώπους σας.</span></div></div>
+      </div>
+      <ol class="corp__how">
+        <li><b>1.</b> Συνάντηση &amp; αξιολόγηση αναγκών της εταιρείας</li>
+        <li><b>2.</b> Προσαρμοσμένο πρόγραμμα — στο studio ή on-site</li>
+        <li><b>3.</b> Ευέλικτα πακέτα (pay-per-session ή corporate membership)</li>
+        <li><b>4.</b> Μηνιαία αναφορά συμμετοχής &amp; αποτελεσμάτων</li>
+        <li><b>5.</b> Προνομιακές τιμές για όλους τους εργαζόμενους</li>
+      </ol>
+    </div>
+
+    <div class="reveal">
+      <form class="form" id="corpForm" novalidate>
+        <h3>Ζητήστε Εταιρική Προσφορά</h3>
+        <p class="lede">Συμπληρώστε τα στοιχεία σας και θα επικοινωνήσουμε μαζί σας με μια προσαρμοσμένη πρόταση.</p>
+        <div class="field"><label for="c_company">Όνομα Εταιρείας *</label><input id="c_company" name="company" type="text" required autocomplete="organization"><span class="msg">Συμπληρώστε το όνομα της εταιρείας.</span></div>
+        <div class="form__row">
+          <div class="field"><label for="c_emp">Αριθμός Εργαζομένων *</label>
+            <select id="c_emp" name="employees" required>
+              <option value="">Επιλέξτε…</option><option>1–10</option><option>11–50</option><option>51–150</option><option>150+</option>
+            </select><span class="msg">Επιλέξτε εύρος.</span>
+          </div>
+          <div class="field"><label for="c_phone">Τηλέφωνο *</label><input id="c_phone" name="phone" type="tel" required autocomplete="tel"><span class="msg">Συμπληρώστε έγκυρο τηλέφωνο.</span></div>
+        </div>
+        <div class="field"><label for="c_email">Email *</label><input id="c_email" name="email" type="email" required autocomplete="email"><span class="msg">Συμπληρώστε έγκυρο email.</span></div>
+        <button type="submit" class="btn btn--primary btn--block">Στείλτε το αίτημα</button>
+        <p class="privacy">Με την υποβολή συμφωνείτε με την <a href="#" style="color:var(--sage);text-decoration:underline">Πολιτική Απορρήτου</a>. <!-- PLACEHOLDER link --></p>
+        <div class="form__ok" id="corpOk">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Σχεδόν έτοιμα!</h3><p>Άνοιξε η εφαρμογή email σας με συμπληρωμένο το αίτημα — πατήστε «Αποστολή» για να μας το στείλετε και θα επικοινωνήσουμε σύντομα μαζί σας.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GEO / LOCAL SEO ===================== -->
+<section class="section section--tint" id="areas">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">Περιοχές εξυπηρέτησης</span>
+      <h2 class="display mt-2">Δίπλα σας, στη Δυτική Αττική</h2>
+      <p class="lede mt-3">Στο MV Pilates Studio στη <b>Μάνδρα</b> υποδεχόμαστε καθημερινά ασκούμενους από όλη τη Δυτική Αττική.</p>
+    </div>
+    <div class="areas reveal">
+      <span class="areachip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Μάνδρα</span>
+      <span class="areachip">Ελευσίνα</span><span class="areachip">Ασπρόπυργος</span><span class="areachip">Μαγούλα</span>
+      <span class="areachip">Μέγαρα</span><span class="areachip">Νέα Πέραμος</span><span class="areachip">Οινόφυτα</span><span class="areachip">Δυτική Αττική</span>
+    </div>
+    <p class="kwline reveal">Σχετικές αναζητήσεις: <b>Pilates Μάνδρα</b> · <b>Pilates Reformer Μάνδρα</b> · <b>Pilates Ελευσίνα</b> · <b>Pilates για πόνους μέσης</b> · <b>Pilates για αυχενικό</b> · <b>Personal Pilates Δυτική Αττική</b> · <b>Corporate Wellness Δυτική Αττική</b>.</p>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">Συχνές ερωτήσεις</span>
+      <h2 class="display mt-2">Ό,τι θέλετε να ξέρετε πριν ξεκινήσετε</h2>
+    </div>
+    <div class="faq">
+      <div class="fitem"><button class="fq" aria-expanded="false">Είναι κατάλληλο αν έχω πόνο στη μέση ή στον αυχένα;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Ναι — είναι από τους βασικούς λόγους που οι άνθρωποι έρχονται σε εμάς. Σχεδιάζουμε εξατομικευμένα προγράμματα με χαμηλή καταπόνηση. Σε περιπτώσεις οξείας ενόχλησης ή ιατρικής διάγνωσης, συνεργαζόμαστε με την καθοδήγηση του θεράποντος ιατρού σας.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Είμαι αρχάριος/α — θα τα καταφέρω;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Απολύτως. Ξεκινάμε από το δικό σας επίπεδο και προχωράμε με τον δικό σας ρυθμό. Η εξατομικευμένη προσέγγιση σημαίνει ότι κάθε άσκηση προσαρμόζεται σε εσάς.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Πόσο συχνά πρέπει να έρχομαι για να δω αποτελέσματα;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Οι περισσότεροι ασκούμενοι βλέπουν διαφορά με 2 συνεδρίες την εβδομάδα. Στην αρχική αξιολόγηση προτείνουμε τη συχνότητα που ταιριάζει στους στόχους και το πρόγραμμά σας.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Υπάρχει ευελιξία στα ραντεβού;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Ναι. Το πρόγραμμα προσαρμόζεται στη δική σας καθημερινότητα, με ευέλικτες ώρες και εύκολη επαναπρογραμματισμό ραντεβού.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Ποια είναι η διαφορά από το γυμναστήριο;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Δεν είμαστε γυμναστήριο ούτε απρόσωπο ομαδικό μάθημα. Είμαστε ένα premium, αμιγές Reformer studio με προσωπική καθοδήγηση και έμφαση στο αποτέλεσμα και την ασφάλεια.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Τι να περιμένω στην πρώτη μου προπόνηση;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Μια σύντομη αξιολόγηση των αναγκών και των στόχων σας, μια εισαγωγή στον Reformer και μια πρώτη καθοδηγούμενη συνεδρία — χωρίς πίεση και με πλήρη υποστήριξη.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Τι πρέπει να φορέσω; Χρειάζομαι κάτι;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Άνετα αθλητικά ρούχα και αντιολισθητικές κάλτσες. Όλο τον υπόλοιπο εξοπλισμό τον παρέχουμε εμείς.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Πρέπει να είμαι ευλύγιστος/η ή σε φόρμα για να ξεκινήσω;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Όχι — η ευλυγισία και η δύναμη είναι αποτέλεσμα, όχι προϋπόθεση. Ξεκινάτε ακριβώς από εκεί που βρίσκεστε σήμερα.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Είναι κατάλληλο για κάθε ηλικία ή μετά από εγκυμοσύνη;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Ο Reformer είναι από τις πιο προσαρμόσιμες μεθόδους και ταιριάζει σε ενήλικες κάθε ηλικίας και επιπέδου. Για ειδικές περιπτώσεις προσαρμόζουμε το πρόγραμμα ανάλογα.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Υπάρχει εγγύηση ικανοποίησης;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Θέλουμε να νιώσετε απόλυτη σιγουριά. Γι' αυτό ξεκινάμε με δωρεάν δοκιμαστική προπόνηση, ώστε να ζήσετε την εμπειρία πριν δεσμευτείτε. <em>[Οι αναλυτικοί όροι ικανοποίησης συμπληρώνονται από το studio — placeholder.]</em></p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Προσφέρετε εταιρικά προγράμματα;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Ναι, σχεδιάζουμε προσαρμοσμένα προγράμματα Corporate Wellness για επιχειρήσεις της Δυτικής Αττικής. <a href="#corporate" style="color:var(--sage);text-decoration:underline">Ζητήστε εταιρική προσφορά</a>.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Πώς κλείνω δοκιμαστική προπόνηση;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Συμπληρώστε τη <a href="#trial" style="color:var(--sage);text-decoration:underline">φόρμα κράτησης</a> ή καλέστε μας. Επικοινωνούμε άμεσα για να κλείσουμε την ώρα που σας βολεύει.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRIAL / FINAL CTA ===================== -->
+<section class="section section--tint" id="trial">
+  <div class="wrap">
+    <div class="split" style="align-items:center">
+      <div class="reveal">
+        <span class="eyebrow">Δωρεάν δοκιμαστική προπόνηση</span>
+        <h2 class="display mt-2">Κλείσε τη δωρεάν δοκιμαστική προπόνηση σου</h2>
+        <p class="lede mt-3">Ζήστε την εμπειρία MV Pilates χωρίς καμία δέσμευση. Συμπληρώστε τα στοιχεία σας και θα επικοινωνήσουμε για να κλείσουμε την ώρα που σας βολεύει.</p>
+        <div class="mt-5" style="display:grid;gap:.8rem">
+          <span class="trust__item" style="width:fit-content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Αρχική αξιολόγηση χωρίς χρέωση</span>
+          <span class="trust__item" style="width:fit-content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Καμία δέσμευση</span>
+          <span class="trust__item" style="width:fit-content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Online κράτηση σε λίγα δευτερόλεπτα</span>
+        </div>
+        <div class="btnrow mt-5">
+          <a href="#" class="btn btn--ghost" id="bookingLink"><!-- PLACEHOLDER: online booking link -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18" stroke-linecap="round"/></svg>
+            Online Κράτηση
+          </a>
+          <a href="tel:+302110082697" class="btn btn--ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Καλέστε μας
+          </a>
+          <a href="viber://chat?number=%2B306907061173" class="btn btn--ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Viber / WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="form" id="trialForm" novalidate>
+          <h3>Κράτηση δοκιμαστικής προπόνησης</h3>
+          <p class="lede">Σας απαντάμε αυθημερόν — μέσω Viber, WhatsApp ή της εφαρμογής που προτιμάτε.</p>
+          <div class="field"><label for="t_name">Ονοματεπώνυμο *</label><input id="t_name" name="name" type="text" required autocomplete="name"><span class="msg">Συμπληρώστε το όνομά σας.</span></div>
+          <div class="form__row">
+            <div class="field"><label for="t_phone">Τηλέφωνο *</label><input id="t_phone" name="phone" type="tel" required autocomplete="tel"><span class="msg">Συμπληρώστε έγκυρο τηλέφωνο.</span></div>
+            <div class="field"><label for="t_email">Email</label><input id="t_email" name="email" type="email" autocomplete="email"><span class="msg">Μη έγκυρο email.</span></div>
+          </div>
+          <div class="field"><label for="t_goal">Ο κύριος στόχος σας</label>
+            <select id="t_goal" name="goal"><option value="">Επιλέξτε…</option><option>Ανακούφιση από πόνους μέσης/αυχένα</option><option>Βελτίωση στάσης σώματος</option><option>Δύναμη &amp; ευλυγισία</option><option>Γενική ευεξία &amp; ενέργεια</option></select>
+          </div>
+          <div class="field"><label for="t_contact">Πώς προτιμάτε να επικοινωνήσουμε;</label>
+            <select id="t_contact" name="contact_method"><option value="">Επιλέξτε…</option><option>Viber</option><option>WhatsApp</option><option>Τηλεφωνική κλήση</option><option>Άλλη εφαρμογή (Messenger/Instagram)</option></select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Κλείσε τη δωρεάν δοκιμαστική προπόνηση σου</button>
+          <p class="privacy">Με την υποβολή συμφωνείτε με την <a href="#" style="color:var(--sage);text-decoration:underline">Πολιτική Απορρήτου</a>.</p>
+          <div class="form__ok" id="trialOk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Σχεδόν έτοιμα!</h3><p>Άνοιξε η εφαρμογή email σας με συμπληρωμένο το αίτημα — πατήστε «Αποστολή» για να μας το στείλετε και θα επικοινωνήσουμε πολύ σύντομα.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <div class="brand">
+          <img class="brand__mark" src="logo.png" alt="MV Pilates Studio λογότυπο" width="44" height="44">
+          <span class="brand__txt"><span class="brand__name">MV Pilates</span><span class="brand__sub" style="color:#8FA37E">Studio · Μάνδρα</span></span>
+        </div>
+        <p>Premium, εξατομικευμένο Pilates Reformer στη Μάνδρα Αττικής. Πραγματικά αποτελέσματα — λιγότερος πόνος, καλύτερη στάση, πιο δυνατό σώμα.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/mvpilatesstudio/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><!-- PLACEHOLDER --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V7c0-1.1.9-2 2-2h2V2h-3a4 4 0 0 0-4 4v3H8v3h3v9h3v-9h2.5l.5-3H14Z" stroke-linejoin="round"/></svg></a>
+          <a href="#" aria-label="TikTok"><!-- PLACEHOLDER --><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 4c.5 2.5 2 4 4.5 4.3V11c-1.7 0-3.2-.5-4.5-1.4V15a5.5 5.5 0 1 1-5.5-5.5c.3 0 .7 0 1 .1v2.8a2.7 2.7 0 1 0 1.9 2.6V4H15Z" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Πλοήγηση</h4>
+        <ul>
+          <li><a href="#why">Γιατί εμείς</a></li><li><a href="#how">Πώς λειτουργεί</a></li>
+          <li><a href="#services">Υπηρεσίες</a></li><li><a href="#corporate">Εταιρείες</a></li>
+          <li><a href="#faq">Συχνές ερωτήσεις</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Υπηρεσίες</h4>
+        <ul>
+          <li><a href="#services">Pilates Reformer</a></li><li><a href="#services">Personal Training</a></li>
+          <li><a href="#services">Πόνοι μέσης &amp; αυχένα</a></li><li><a href="#corporate">Corporate Wellness</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Επικοινωνία</h4>
+        <ul class="foot__contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg> Βαγγέλη Κοροπούλη 70, Μάνδρα 19600</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92Z" stroke-linecap="round" stroke-linejoin="round"/></svg> <a href="tel:+302110082697">+30 21 1008 2697 <span style="font-size:.7rem">(σταθερό)</span></a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" stroke-linecap="round" stroke-linejoin="round"/></svg> <a href="tel:+306907061173">+30 690 706 1173 <span style="font-size:.7rem">(Viber / κινητό)</span></a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6" stroke-linecap="round"/></svg> <a href="mailto:info@mvpilates.gr">info@mvpilates.gr</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Google Maps embed (keyless query embed — works with the real address) -->
+    <div class="mapwrap">
+      <iframe title="MV Pilates Studio — Χάρτης" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=%CE%92%CE%B1%CE%B3%CE%B3%CE%AD%CE%BB%CE%B7%20%CE%9A%CE%BF%CF%81%CE%BF%CF%80%CE%BF%CF%8D%CE%BB%CE%B7%2070%2C%20%CE%9C%CE%AC%CE%BD%CE%B4%CF%81%CE%B1%2019600&output=embed"></iframe>
+    </div>
+
+    <!-- Instagram feed — real studio photos -->
+    <div class="ig">
+      <div class="ig__head">
+        <h4>@mvpilatesstudio</h4>
+        <a href="https://www.instagram.com/mvpilatesstudio/" target="_blank" rel="noopener" class="textlink" style="color:#A9BE97">Ακολουθήστε μας →</a>
+      </div>
+      <div class="ig__grid">
+        <div class="ig__cell"><img src="pictures.png" alt="Studio Pilates Reformer" loading="lazy"></div>
+        <div class="ig__cell"><img src="4.png" alt="Ατμόσφαιρα studio" loading="lazy"></div>
+        <div class="ig__cell"><img src="7.png" alt="Hands-on καθοδήγηση" loading="lazy"></div>
+        <div class="ig__cell"><img src="pictures2.png" alt="Χώρος Reformer" loading="lazy"></div>
+        <div class="ig__cell"><img src="3.png" alt="Λεπτομέρειες χώρου" loading="lazy"></div>
+        <div class="ig__cell"><img src="reformer-benefits.png" alt="Οφέλη Pilates Reformer" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="foot__bottom">
+      <span>© <span id="yr">2026</span> MV Pilates Studio · Μάνδρα Αττικής. Με επιφύλαξη παντός δικαιώματος.</span>
+      <span><a href="#">Πολιτική Απορρήτου</a> · <a href="#">Όροι Χρήσης</a> <span style="font-size:.7rem">(placeholders)</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STICKY MOBILE CTA ===================== -->
+<div class="mobicta">
+  <a href="#trial" class="btn btn--primary">Δωρεάν Δοκιμαστική Προπόνηση</a>
+  <a href="tel:+302110082697" class="btn btn--ghost" aria-label="Καλέστε μας"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92Z" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+
+<!-- ===================== SCHEMA.ORG JSON-LD ===================== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":["LocalBusiness","SportsActivityLocation","HealthClub"],
+      "@id":"https://www.mvpilates.gr/#studio",
+      "name":"MV Pilates Studio",
+      "description":"Premium, εξατομικευμένο Pilates Reformer στη Μάνδρα Αττικής με έμφαση στην ανακούφιση πόνων, τη στάση σώματος και τα πραγματικά αποτελέσματα.",
+      "url":"https://www.mvpilates.gr/",
+      "telephone":"+302110082697",
+      "email":"info@mvpilates.gr",
+      "image":"https://www.mvpilates.gr/pictures.png",
+      "priceRange":"€€",
+      "address":{"@type":"PostalAddress","streetAddress":"Βαγγέλη Κοροπούλη 70","addressLocality":"Μάνδρα","postalCode":"19600","addressRegion":"Αττική","addressCountry":"GR"},
+      "areaServed":["Μάνδρα","Ελευσίνα","Ασπρόπυργος","Μαγούλα","Μέγαρα","Νέα Πέραμος","Δυτική Αττική"],
+      "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"PLACEHOLDER_REVIEW_COUNT"},
+      "sameAs":["https://www.instagram.com/mvpilatesstudio/"],
+      "makesOffer":[
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pilates Reformer (Ομαδικό & Personal)"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Personal Training 1:1"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Προγράμματα για πόνους μέσης & αυχένα"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Εταιρικά Προγράμματα Ευεξίας"}}
+      ]
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://www.mvpilates.gr/#org",
+      "name":"MV Pilates Studio",
+      "url":"https://www.mvpilates.gr/",
+      "logo":"https://www.mvpilates.gr/logo.png",
+      "award":"Εθνική Διάκριση «Αετοί Φυσικής Αγωγής 2025»"
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Είναι κατάλληλο αν έχω πόνο στη μέση ή στον αυχένα;","acceptedAnswer":{"@type":"Answer","text":"Ναι, είναι από τους βασικούς λόγους που οι άνθρωποι έρχονται σε εμάς. Σχεδιάζουμε εξατομικευμένα προγράμματα χαμηλής καταπόνησης και, σε ιατρικές περιπτώσεις, συνεργαζόμαστε με τον θεράποντα ιατρό σας."}},
+        {"@type":"Question","name":"Είμαι αρχάριος/α — θα τα καταφέρω;","acceptedAnswer":{"@type":"Answer","text":"Απολύτως. Ξεκινάμε από το δικό σας επίπεδο και προχωράμε με τον δικό σας ρυθμό, με εξατομικευμένη προσαρμογή κάθε άσκησης."}},
+        {"@type":"Question","name":"Πόσο συχνά πρέπει να έρχομαι για να δω αποτελέσματα;","acceptedAnswer":{"@type":"Answer","text":"Οι περισσότεροι ασκούμενοι βλέπουν διαφορά με 2 συνεδρίες την εβδομάδα. Στην αρχική αξιολόγηση προτείνουμε τη συχνότητα που ταιριάζει στους στόχους σας."}},
+        {"@type":"Question","name":"Ποια είναι η διαφορά από το γυμναστήριο;","acceptedAnswer":{"@type":"Answer","text":"Δεν είμαστε γυμναστήριο ούτε απρόσωπο ομαδικό μάθημα, αλλά ένα premium αμιγές Reformer studio με προσωπική καθοδήγηση και έμφαση στο αποτέλεσμα."}},
+        {"@type":"Question","name":"Προσφέρετε εταιρικά προγράμματα;","acceptedAnswer":{"@type":"Answer","text":"Ναι, σχεδιάζουμε προσαρμοσμένα προγράμματα Corporate Wellness για επιχειρήσεις της Δυτικής Αττικής, στο studio ή on-site."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // nav scroll state
+  var nav=document.querySelector('.nav');
+  var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>8);};
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  // mobile menu
+  var burger=document.getElementById('burger'),links=document.getElementById('navlinks');
+  burger.addEventListener('click',function(){
+    var open=links.classList.toggle('open');burger.classList.toggle('open',open);
+    burger.setAttribute('aria-expanded',open);
+  });
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){
+    links.classList.remove('open');burger.classList.remove('open');burger.setAttribute('aria-expanded',false);
+  });});
+
+  // reveal on scroll
+  var revs=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    revs.forEach(function(el){io.observe(el);});
+  }else{revs.forEach(function(el){el.classList.add('in');});}
+
+  // FAQ accordion
+  document.querySelectorAll('.fitem').forEach(function(item){
+    var btn=item.querySelector('.fq'),ans=item.querySelector('.fa');
+    btn.addEventListener('click',function(){
+      var open=item.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+      ans.style.maxHeight=open?ans.scrollHeight+'px':null;
+    });
+  });
+
+  // testimonials carousel
+  var track=document.getElementById('ttrack');
+  if(track){
+    var slides=track.children.length,i=0;
+    var dotsWrap=document.getElementById('tdots');
+    for(var d=0;d<slides;d++){var b=document.createElement('button');b.className='tdot'+(d?'':' active');b.setAttribute('aria-label','Αξιολόγηση '+(d+1));(function(idx){b.addEventListener('click',function(){i=idx;render();});})(d);dotsWrap.appendChild(b);}
+    var dots=dotsWrap.children;
+    function render(){track.style.transform='translateX(-'+(i*100)+'%)';for(var k=0;k<dots.length;k++)dots[k].classList.toggle('active',k===i);}
+    document.getElementById('tnext').addEventListener('click',function(){i=(i+1)%slides;render();});
+    document.getElementById('tprev').addEventListener('click',function(){i=(i-1+slides)%slides;render();});
+    var rm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+    if(!rm){var timer=setInterval(function(){i=(i+1)%slides;render();},6000);
+      document.getElementById('tcar').addEventListener('mouseenter',function(){clearInterval(timer);});}
+    var x0=null;track.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+    track.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40){i=(dx<0?i+1:i-1+slides)%slides;render();}x0=null;});
+  }
+
+  // form handling (client-side validation + mailto delivery + success state)
+  var CONTACT_EMAIL='info@mvpilates.gr';
+  function buildMailto(form,subject){
+    var lines=[];
+    form.querySelectorAll('input,select,textarea').forEach(function(f){
+      if(!f.name||!f.value.trim())return;
+      var lab=form.querySelector('label[for="'+f.id+'"]');
+      var key=lab?lab.textContent.replace(/\s*\*\s*$/,'').trim():f.name;
+      lines.push(key+': '+f.value.trim());
+    });
+    return 'mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));
+  }
+  function handle(formId,okId,subject){
+    var form=document.getElementById(formId),ok=document.getElementById(okId);
+    if(!form)return;
+    form.addEventListener('submit',function(e){
+      e.preventDefault();var valid=true;
+      form.querySelectorAll('[required]').forEach(function(f){
+        var bad=!f.value.trim()||(f.type==='email'&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.value));
+        f.classList.toggle('err',bad);
+        var m=f.parentElement.querySelector('.msg');if(m)m.classList.toggle('show',bad);
+        if(bad)valid=false;
+      });
+      var em=form.querySelector('input[type=email]');
+      if(em&&em.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em.value)){em.classList.add('err');var mm=em.parentElement.querySelector('.msg');if(mm)mm.classList.add('show');valid=false;}
+      if(!valid)return;
+      window.location.href=buildMailto(form,subject);
+      form.querySelectorAll('.field,button[type=submit],.privacy').forEach(function(n){n.style.display='none';});
+      ok.classList.add('show');
+    });
+    form.querySelectorAll('input,select').forEach(function(f){f.addEventListener('input',function(){f.classList.remove('err');var m=f.parentElement.querySelector('.msg');if(m)m.classList.remove('show');});});
+  }
+  handle('corpForm','corpOk','Νέο αίτημα εταιρικής προσφοράς — MV Pilates');
+  handle('trialForm','trialOk','Νέα κράτηση δοκιμαστικής προπόνησης — MV Pilates');
+})();
+</script>
+</body>
+</html>
