@@ -705,26 +705,17 @@ p{max-width:var(--measure)}
     </div>
 
     <div class="reveal">
-      <form class="form" id="corpForm" novalidate>
+      <div class="form">
         <h3>Ζητήστε Εταιρική Προσφορά</h3>
         <p class="lede">Συμπληρώστε τα στοιχεία σας και θα επικοινωνήσουμε μαζί σας με μια προσαρμοσμένη πρόταση.</p>
-        <div class="field"><label for="c_company">Όνομα Εταιρείας *</label><input id="c_company" name="company" type="text" required autocomplete="organization"><span class="msg">Συμπληρώστε το όνομα της εταιρείας.</span></div>
-        <div class="form__row">
-          <div class="field"><label for="c_emp">Αριθμός Εργαζομένων *</label>
-            <select id="c_emp" name="employees" required>
-              <option value="">Επιλέξτε…</option><option>1–10</option><option>11–50</option><option>51–150</option><option>150+</option>
-            </select><span class="msg">Επιλέξτε εύρος.</span>
-          </div>
-          <div class="field"><label for="c_phone">Τηλέφωνο *</label><input id="c_phone" name="phone" type="tel" required autocomplete="tel"><span class="msg">Συμπληρώστε έγκυρο τηλέφωνο.</span></div>
-        </div>
-        <div class="field"><label for="c_email">Email *</label><input id="c_email" name="email" type="email" required autocomplete="email"><span class="msg">Συμπληρώστε έγκυρο email.</span></div>
-        <button type="submit" class="btn btn--primary btn--block">Στείλτε το αίτημα</button>
-        <p class="privacy">Με την υποβολή συμφωνείτε με την <a href="privacy-policy.html" style="color:var(--sage);text-decoration:underline">Πολιτική Απορρήτου</a> και τους <a href="terms.html" style="color:var(--sage);text-decoration:underline">Όρους Χρήσης</a>.</p>
-        <div class="form__ok" id="corpOk">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h3>Σχεδόν έτοιμα!</h3><p>Άνοιξε η εφαρμογή email σας με συμπληρωμένο το αίτημα — πατήστε «Αποστολή» για να μας το στείλετε και θα επικοινωνήσουμε σύντομα μαζί σας.</p>
-        </div>
-      </form>
+        <!-- Tally embed — εταιρικό lead form (form id: rjWOLp → https://tally.so/r/rjWOLp).
+             Υπενθύμιση: στο Tally → Settings → Email notifications ενεργοποιήστε ειδοποίηση
+             σε κάθε υποβολή προς το mvpilatesstudio2025@gmail.com (ή όποιο inbox παρακολουθείτε). -->
+        <iframe
+          data-tally-src="https://tally.so/embed/rjWOLp?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+          loading="lazy" width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0"
+          title="Ζητήστε Εταιρική Προσφορά — MV Pilates"></iframe>
+      </div>
     </div>
   </div>
 </section>
@@ -765,7 +756,7 @@ p{max-width:var(--measure)}
       <div class="fitem"><button class="fq" aria-expanded="false">Είναι κατάλληλο για κάθε ηλικία ή μετά από εγκυμοσύνη;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Ο Reformer είναι από τις πιο προσαρμόσιμες μεθόδους και ταιριάζει σε ενήλικες κάθε ηλικίας και επιπέδου. Για ειδικές περιπτώσεις προσαρμόζουμε το πρόγραμμα ανάλογα.</p></div></div></div>
       <div class="fitem"><button class="fq" aria-expanded="false">Υπάρχει εγγύηση ικανοποίησης;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Θέλουμε να νιώσετε απόλυτη σιγουριά. Γι' αυτό ξεκινάμε με δωρεάν δοκιμαστική προπόνηση, ώστε να ζήσετε την εμπειρία πριν δεσμευτείτε. <em>[Οι αναλυτικοί όροι ικανοποίησης συμπληρώνονται από το studio — placeholder.]</em></p></div></div></div>
       <div class="fitem"><button class="fq" aria-expanded="false">Προσφέρετε εταιρικά προγράμματα;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Ναι, σχεδιάζουμε προσαρμοσμένα προγράμματα Corporate Wellness για επιχειρήσεις της Δυτικής Αττικής. <a href="#corporate" style="color:var(--sage);text-decoration:underline">Ζητήστε εταιρική προσφορά</a>.</p></div></div></div>
-      <div class="fitem"><button class="fq" aria-expanded="false">Πώς κλείνω δοκιμαστική προπόνηση;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Συμπληρώστε τη <a href="#trial" style="color:var(--sage);text-decoration:underline">φόρμα κράτησης</a> ή καλέστε μας. Επικοινωνούμε άμεσα για να κλείσουμε την ώρα που σας βολεύει.</p></div></div></div>
+      <div class="fitem"><button class="fq" aria-expanded="false">Πώς κλείνω δοκιμαστική προπόνηση;<span class="fq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="fa"><div class="fa__in"><p>Στείλτε μας ένα μήνυμα στο <a href="#trial" style="color:var(--sage);text-decoration:underline">Viber</a> ή καλέστε μας. Επικοινωνούμε άμεσα για να κλείσουμε την ώρα που σας βολεύει.</p></div></div></div>
     </div>
   </div>
 </section>
@@ -777,7 +768,7 @@ p{max-width:var(--measure)}
       <div class="reveal">
         <span class="eyebrow">Δωρεάν δοκιμαστική προπόνηση</span>
         <h2 class="display mt-2">Κλείσε τη δωρεάν δοκιμαστική προπόνηση σου</h2>
-        <p class="lede mt-3">Ζήστε την εμπειρία MV Pilates χωρίς καμία δέσμευση. Συμπληρώστε τα στοιχεία σας και θα επικοινωνήσουμε για να κλείσουμε την ώρα που σας βολεύει.</p>
+        <p class="lede mt-3">Ζήστε την εμπειρία MV Pilates χωρίς καμία δέσμευση. Στείλτε μας ένα μήνυμα στο Viber και κλείνουμε άμεσα την ώρα που σας βολεύει.</p>
         <div class="mt-5" style="display:grid;gap:.8rem">
           <span class="trust__item" style="width:fit-content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Αρχική αξιολόγηση χωρίς χρέωση</span>
           <span class="trust__item" style="width:fit-content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Καμία δέσμευση</span>
@@ -799,27 +790,19 @@ p{max-width:var(--measure)}
         </div>
       </div>
       <div class="reveal">
-        <form class="form" id="trialForm" novalidate>
-          <h3>Κράτηση δοκιμαστικής προπόνησης</h3>
-          <p class="lede">Σας απαντάμε αυθημερόν — μέσω Viber, WhatsApp ή της εφαρμογής που προτιμάτε.</p>
-          <div class="field"><label for="t_name">Ονοματεπώνυμο *</label><input id="t_name" name="name" type="text" required autocomplete="name"><span class="msg">Συμπληρώστε το όνομά σας.</span></div>
-          <div class="form__row">
-            <div class="field"><label for="t_phone">Τηλέφωνο *</label><input id="t_phone" name="phone" type="tel" required autocomplete="tel"><span class="msg">Συμπληρώστε έγκυρο τηλέφωνο.</span></div>
-            <div class="field"><label for="t_email">Email</label><input id="t_email" name="email" type="email" autocomplete="email"><span class="msg">Μη έγκυρο email.</span></div>
-          </div>
-          <div class="field"><label for="t_goal">Ο κύριος στόχος σας</label>
-            <select id="t_goal" name="goal"><option value="">Επιλέξτε…</option><option>Ανακούφιση από πόνους μέσης/αυχένα</option><option>Βελτίωση στάσης σώματος</option><option>Δύναμη &amp; ευλυγισία</option><option>Γενική ευεξία &amp; ενέργεια</option></select>
-          </div>
-          <div class="field"><label for="t_contact">Πώς προτιμάτε να επικοινωνήσουμε;</label>
-            <select id="t_contact" name="contact_method"><option value="">Επιλέξτε…</option><option>Viber</option><option>WhatsApp</option><option>Τηλεφωνική κλήση</option><option>Άλλη εφαρμογή (Messenger/Instagram)</option></select>
-          </div>
-          <button type="submit" class="btn btn--primary btn--block">Κλείσε τη δωρεάν δοκιμαστική προπόνηση σου</button>
-          <p class="privacy">Με την υποβολή συμφωνείτε με την <a href="privacy-policy.html" style="color:var(--sage);text-decoration:underline">Πολιτική Απορρήτου</a> και τους <a href="terms.html" style="color:var(--sage);text-decoration:underline">Όρους Χρήσης</a>.</p>
-          <div class="form__ok" id="trialOk">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3>Σχεδόν έτοιμα!</h3><p>Άνοιξε η εφαρμογή email σας με συμπληρωμένο το αίτημα — πατήστε «Αποστολή» για να μας το στείλετε και θα επικοινωνήσουμε πολύ σύντομα.</p>
-          </div>
-        </form>
+        <div class="form" style="text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center">
+          <span class="card__icon" style="width:64px;height:64px;border-radius:18px;background:#7360F2;color:#fff;margin-bottom:1rem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:30px;height:30px"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Κλείσε την προπόνησή σου στο Viber</h3>
+          <p class="lede" style="margin-top:.5rem">Ένα μήνυμα και τα κανονίζουμε — σου απαντάμε αυθημερόν και κλείνουμε την ώρα που σε βολεύει. Χωρίς φόρμες, χωρίς αναμονή.</p>
+          <!-- Viber deep link → MV Pilates κινητό +30 690 706 1173 -->
+          <a href="viber://chat?number=%2B306907061173" class="btn btn--block mt-4" style="background:#7360F2;color:#fff;box-shadow:0 10px 24px -10px rgba(115,96,242,.6)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Στείλε μήνυμα στο Viber
+          </a>
+          <a href="tel:+302110082697" class="textlink mt-3">Δεν έχετε Viber; Καλέστε μας στο 211 008 2697</a>
+        </div>
       </div>
     </div>
   </div>
@@ -1039,9 +1022,11 @@ p{max-width:var(--measure)}
     });
     form.querySelectorAll('input,select').forEach(function(f){f.addEventListener('input',function(){f.classList.remove('err');var m=f.parentElement.querySelector('.msg');if(m)m.classList.remove('show');});});
   }
-  handle('corpForm','corpOk','Νέο αίτημα εταιρικής προσφοράς — MV Pilates');
-  handle('trialForm','trialOk','Νέα κράτηση δοκιμαστικής προπόνησης — MV Pilates');
+  // corporate lead capture → Tally embed (#corporate) · trial booking → Viber link (#trial)
+  // (both forms removed; buildMailto/handle kept as no-ops in case a form is re-added later)
 })();
 </script>
+<!-- Tally embed loader — renders any iframe[data-tally-src] on the page -->
+<script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
