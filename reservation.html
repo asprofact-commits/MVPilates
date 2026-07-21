@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A5E66">
+
+<title>Κράτηση Δωρεάν Δοκιμαστικής Προπόνησης | MV Pilates Studio Μάνδρα</title>
+<meta name="description" content="Κλείστε online τη δωρεάν δοκιμαστική σας προπόνηση στο MV Pilates Studio Μάνδρας σε 4 απλά βήματα.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.mvpilates.gr/reservation.html">
+<link rel="icon" type="image/png" href="logo.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="el_GR">
+<meta property="og:title" content="Κράτηση Δωρεάν Δοκιμαστικής Προπόνησης | MV Pilates Studio">
+<meta property="og:description" content="Κλείστε online τη δωρεάν δοκιμαστική σας προπόνηση σε 4 απλά βήματα.">
+<meta property="og:image" content="pictures.png">
+
+<style>
+/* ====================================================================
+   MV PILATES STUDIO — rebuilt with LaTeX-inspired typographic discipline
+   · Single typeface: Arial (clean, consistent Greek rendering)
+   · Modular type scale · 8px baseline rhythm · constrained reading measure
+   · Golden-ratio section spacing · symmetric, centered composition
+   Palette: derived directly from logo.png — teal monogram (primary brand) ·
+            bronze/gold background (warm accent) · warm gold for primary CTAs ·
+            warm-cream neutrals. (Variable names retained; values are logo colours.)
+   ==================================================================== */
+:root{
+  /* ---- colour — sampled from logo.png ---- */
+  --stone:#F4F0E8; --paper:#FCFAF6; --paper-2:#ECE5D8;
+  --ink:#1E2E2D; --ink-soft:#4C5A58; --ink-mute:#85908D;
+  /* teal (logo monogram) drives all primary / brand UI */
+  --sage:#02909E; --sage-deep:#0A5E66; --sage-tint:#DBEFF1; --sage-line:#A9D6DB;
+  /* bronze / gold (logo background) — warm accent */
+  --clay:#B07A2A; --clay-tint:#F1E6D2;
+  /* warm gold reserved for primary CTAs */
+  --ember:#C8842A; --ember-dark:#A2661A;
+  --line:rgba(30,46,45,.12); --line-soft:rgba(30,46,45,.07);
+  --shadow:0 1px 2px rgba(30,46,45,.04), 0 22px 48px -28px rgba(30,46,45,.34);
+  --shadow-sm:0 1px 2px rgba(30,46,45,.05), 0 10px 26px -18px rgba(30,46,45,.30);
+
+  /* ---- typeface: Arial system stack ---- */
+  --sans:Arial, "Helvetica Neue", Helvetica, "Liberation Sans", sans-serif;
+
+  /* ---- modular type scale (ratio ≈ 1.25) ---- */
+  --fs-xs:.76rem; --fs-sm:.9rem; --fs-base:1.0625rem;
+  --fs-md:1.2rem; --fs-lg:1.5rem; --fs-xl:1.92rem; --fs-2xl:2.45rem;
+
+  /* ---- baseline rhythm: spacing as multiples of 0.5rem (8px) ---- */
+  --s1:.5rem; --s2:.75rem; --s3:1rem; --s4:1.5rem; --s5:2rem;
+  --s6:3rem; --s7:4rem; --s8:6rem;
+
+  /* ---- measure (LaTeX-ideal line length) ---- */
+  --measure:66ch; --measure-narrow:54ch;
+
+  --r:14px; --r-lg:22px; --maxw:1120px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;font-size:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--sans); color:var(--ink); background:var(--stone);
+  line-height:1.6; font-size:var(--fs-base); font-weight:400;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+:focus-visible{outline:2.5px solid var(--sage-deep);outline-offset:3px;border-radius:4px}
+
+/* ---------- type ---------- */
+.display{
+  font-weight:800;line-height:1.06;letter-spacing:-.022em;color:var(--sage-deep);
+  text-wrap:balance;
+}
+h1.display{font-size:clamp(2.5rem,6vw,4.1rem)}
+h2.display{font-size:clamp(1.95rem,4.4vw,3rem)}
+h3{font-weight:700;font-size:var(--fs-md);line-height:1.22;color:var(--sage-deep);letter-spacing:-.01em}
+.eyebrow{
+  font-weight:700;font-size:var(--fs-xs);letter-spacing:.26em;text-transform:uppercase;
+  color:var(--sage);display:inline-flex;align-items:center;gap:.7rem;
+}
+.eyebrow::before,.center .eyebrow::after,.hero .eyebrow::after{content:"";width:30px;height:1.5px;background:var(--sage-line);display:inline-block}
+.center .eyebrow,.hero .eyebrow{justify-content:center}
+.lede{font-size:clamp(1.06rem,1.7vw,1.22rem);color:var(--ink-soft);font-weight:400;line-height:1.66}
+p{max-width:var(--measure)}
+
+/* ---------- layout primitives ---------- */
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.2rem,4vw,2.5rem)}
+.section{padding-block:clamp(4rem,8.6vw,7rem);position:relative}
+.section--tint{background:var(--paper)}
+.section--deep{background:var(--sage-deep);color:#E2EFEE}
+.section--deep h2.display,.section--deep h3{color:#fff}
+.section--deep .lede{color:#BBD8D7}
+.section--deep .eyebrow{color:#8ECBD1}
+.section--deep .eyebrow::before,.section--deep .eyebrow::after{background:#2E767E}
+.center{text-align:center}
+.shead{max-width:46rem}
+.shead.center{margin-inline:auto}
+.shead.center p{margin-inline:auto}
+.shead .lede{margin-top:var(--s3)}
+.mt-1{margin-top:var(--s1)}.mt-2{margin-top:var(--s2)}.mt-3{margin-top:var(--s3)}
+.mt-4{margin-top:var(--s4)}.mt-5{margin-top:var(--s5)}.mt-6{margin-top:var(--s6)}
+
+/* ---------- the carriage rail (signature divider) ---------- */
+.rail{height:1.5px;background:linear-gradient(90deg,transparent,var(--sage-line) 14%,var(--sage-line) 86%,transparent);position:relative;max-width:var(--maxw);margin-inline:auto}
+.rail::before,.rail::after{content:"";position:absolute;top:50%;width:9px;height:9px;border-radius:50%;background:var(--stone);border:1.5px solid var(--sage);transform:translateY(-50%)}
+.rail::before{left:14%}.rail::after{right:14%}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-weight:700;font-size:var(--fs-sm);letter-spacing:.01em;padding:.92rem 1.6rem;border-radius:999px;transition:transform .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease,border-color .18s ease;will-change:transform;text-align:center;line-height:1.1}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--primary{background:var(--ember);color:#fff;box-shadow:0 10px 24px -10px rgba(200,132,42,.6)}
+.btn--primary:hover{background:var(--ember-dark);transform:translateY(-2px);box-shadow:0 16px 30px -12px rgba(200,132,42,.7)}
+.btn--ghost{background:transparent;color:var(--sage-deep);border:1.5px solid var(--sage-line)}
+.btn--ghost:hover{background:var(--sage-tint);border-color:var(--sage);transform:translateY(-2px)}
+.btn--light{background:#fff;color:var(--sage-deep)}
+.btn--light:hover{transform:translateY(-2px);box-shadow:0 14px 30px -14px rgba(0,0,0,.4)}
+.btn--block{width:100%}
+.btnrow{display:flex;flex-wrap:wrap;gap:.85rem}
+.center .btnrow{justify-content:center}
+.textlink{font-weight:700;font-size:var(--fs-sm);color:var(--sage);display:inline-flex;align-items:center;gap:.4rem;transition:gap .18s ease,color .18s ease}
+.textlink svg{width:15px;height:15px;transition:transform .18s ease}
+.textlink:hover{color:var(--sage-deep)}.textlink:hover svg{transform:translateX(3px)}
+
+/* ---------- header / nav ---------- */
+.nav{position:sticky;top:0;z-index:60;background:rgba(244,240,232,.84);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .25s,box-shadow .25s}
+.nav.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(30,46,45,.4)}
+.nav__in{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;flex:none}
+.brand__mark{width:44px;height:44px;flex:none;border-radius:10px;object-fit:cover;box-shadow:var(--shadow-sm)}
+.brand__txt{display:flex;flex-direction:column;line-height:1}
+.brand__name{font-weight:800;font-size:1.22rem;color:var(--sage-deep);letter-spacing:.01em}
+.brand__sub{font-size:.58rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-top:4px}
+.navlinks{display:flex;align-items:center;gap:1.7rem}
+.navlinks a{font-weight:600;font-size:var(--fs-sm);color:var(--ink-soft);transition:color .18s}
+.navlinks a:hover{color:var(--sage-deep)}
+.nav__cta{display:flex;align-items:center;gap:.9rem}
+.nav__phone{font-weight:700;font-size:var(--fs-sm);color:var(--sage-deep);display:inline-flex;align-items:center;gap:.45rem;white-space:nowrap}
+.nav__phone svg{width:16px;height:16px;color:var(--sage)}
+.burger{display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);align-items:center;justify-content:center;flex-direction:column;gap:4px}
+.burger span{width:18px;height:2px;background:var(--sage-deep);border-radius:2px;transition:.25s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- hero (centered, symmetric) ---------- */
+.hero{position:relative;overflow:hidden;text-align:center;
+  background:
+    radial-gradient(110% 70% at 50% -10%,rgba(2,144,158,.12),transparent 60%),
+    radial-gradient(80% 60% at 50% 120%,rgba(176,122,42,.12),transparent 55%),var(--stone);
+  padding-block:clamp(2.8rem,5.5vw,4.6rem) clamp(2.4rem,4.5vw,3.6rem)}
+.hero__copy{max-width:54rem;margin-inline:auto}
+.hero h1{margin-top:var(--s3)}
+.hero h1 em{font-style:normal;color:var(--clay)}
+.hero__sub{margin:var(--s4) auto 0;font-size:clamp(1.06rem,1.7vw,1.2rem);color:var(--ink-soft);max-width:42rem}
+.hero .btnrow{margin-top:var(--s5)}
+.trust{margin-top:var(--s5);display:flex;flex-wrap:wrap;gap:.6rem .55rem;justify-content:center}
+.trust__item{display:inline-flex;align-items:center;gap:.5rem;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.5rem .95rem;font-size:.82rem;font-weight:600;color:var(--ink-soft)}
+.trust__item svg{width:15px;height:15px;color:var(--sage);flex:none}
+.stars{color:var(--clay);letter-spacing:1px;font-size:.85rem}
+
+/* hero triptych — symmetric three-frame composition */
+.triptych{display:grid;grid-template-columns:1fr 1.16fr 1fr;gap:clamp(.7rem,1.6vw,1.2rem);align-items:center;margin-top:clamp(2.6rem,5vw,3.6rem)}
+.frame{position:relative;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--sage-tint)}
+.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.frame--side{aspect-ratio:3/4.4}
+.frame--main{aspect-ratio:3/4.8}
+.hero__badge{position:absolute;z-index:3;top:14px;left:14px;background:var(--sage-deep);color:#fff;border-radius:14px;padding:.6rem .8rem;box-shadow:var(--shadow);text-align:left}
+.hero__badge .n{font-size:1.5rem;line-height:1;color:#fff;font-weight:800}
+.hero__badge .l{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#A6D1D6;margin-top:.2rem}
+.hero__ribbon{position:absolute;z-index:3;top:14px;right:14px;background:rgba(251,250,246,.92);backdrop-filter:blur(4px);border:1px solid var(--clay-tint);border-radius:12px;padding:.5rem .7rem;display:flex;align-items:center;gap:.45rem;font-size:.7rem;font-weight:700;color:var(--sage-deep);max-width:160px;text-align:left}
+.hero__ribbon svg{width:18px;height:18px;color:var(--clay);flex:none}
+
+/* ---------- generic cards ---------- */
+.grid{display:grid;gap:1.2rem}
+.g-2{grid-template-columns:repeat(2,1fr)}
+.g-3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:1.7rem;box-shadow:var(--shadow-sm);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--sage-line)}
+.card__icon{width:48px;height:48px;border-radius:13px;background:var(--sage-tint);display:flex;align-items:center;justify-content:center;color:var(--sage-deep);margin-bottom:1.05rem}
+.card__icon svg{width:23px;height:23px}
+.card h3{margin-bottom:.5rem}
+.card p{color:var(--ink-soft);font-size:var(--fs-sm)}
+
+/* split / media sections — balanced two-column */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.8rem,4.5vw,3.6rem);align-items:center}
+.media{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--sage-tint);position:relative}
+.media img{width:100%;height:100%;object-fit:cover;display:block}
+.media--portrait{aspect-ratio:4/4.6}
+.media--tall{aspect-ratio:4/4.9}
+
+/* result list */
+.results{display:grid;gap:.75rem;margin-top:.4rem}
+.results li{display:flex;gap:.7rem;align-items:flex-start;font-weight:600;color:var(--ink);font-size:var(--fs-base);list-style:none}
+.results li svg{width:20px;height:20px;color:var(--sage);flex:none;margin-top:3px}
+
+/* clinical-pilates differentiator callout */
+.clinical{display:flex;gap:.85rem;align-items:flex-start;padding:1.05rem 1.25rem;background:var(--sage-tint);border:1px solid var(--sage-line);border-left:4px solid var(--sage);border-radius:14px}
+.clinical svg{width:26px;height:26px;color:var(--sage-deep);flex:none;margin-top:2px}
+.clinical b{display:block;color:var(--sage-deep);font-size:1.04rem;line-height:1.3;margin-bottom:.2rem}
+.clinical span{font-size:var(--fs-sm);color:var(--ink-soft)}
+
+/* ---------- how it works (rail steps) ---------- */
+.steps{position:relative;margin-top:var(--s6)}
+.steps__rail{position:absolute;top:34px;left:8%;right:8%;height:2px;background:repeating-linear-gradient(90deg,var(--sage-line) 0 10px,transparent 10px 18px);z-index:0}
+.steps__grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.1rem;position:relative;z-index:1}
+.step{text-align:center}
+.step__dot{width:68px;height:68px;margin:0 auto 1.1rem;border-radius:50%;background:var(--paper);border:2px solid var(--sage-line);display:flex;align-items:center;justify-content:center;font-size:1.55rem;font-weight:800;color:var(--sage-deep);box-shadow:var(--shadow-sm);transition:transform .2s,border-color .2s,background .2s}
+.step:hover .step__dot{transform:translateY(-4px);border-color:var(--ember);background:#fff}
+.step h3{font-size:1.08rem;margin-bottom:.35rem}
+.step p{font-size:var(--fs-sm);color:var(--ink-soft);max-width:none}
+
+/* ---------- services ---------- */
+.svc{display:flex;flex-direction:column;gap:.65rem}
+.svc__top{display:flex;align-items:center;gap:.9rem}
+.svc p{color:var(--ink-soft);font-size:var(--fs-sm);flex:1;max-width:none}
+.svc .textlink{margin-top:.3rem}
+.svc--feat{background:var(--sage-deep);color:#E2EFEE;border-color:var(--sage-deep)}
+.svc--feat h3{color:#fff}.svc--feat p{color:#BBD8D7}
+.svc--feat .card__icon{background:rgba(255,255,255,.1);color:#fff}
+.svc--feat .textlink{color:#A6D1D6}.svc--feat .textlink:hover{color:#fff}
+
+/* ---------- gallery strip ---------- */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.7rem,1.6vw,1.1rem);margin-top:var(--s6)}
+.gtile{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);aspect-ratio:4/4.6;background:var(--sage-tint)}
+.gtile img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.gtile:hover img{transform:scale(1.05)}
+.gtile__cap{position:absolute;inset:auto .7rem .7rem;background:rgba(30,46,45,.62);backdrop-filter:blur(3px);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.04em;padding:.4rem .65rem;border-radius:9px}
+
+/* ---------- testimonials carousel ---------- */
+.tcar{position:relative;margin-top:var(--s6);max-width:50rem;margin-inline:auto}
+.tcar__view{overflow:hidden;border-radius:var(--r-lg)}
+.tcar__track{display:flex;transition:transform .5s cubic-bezier(.6,.05,.2,1)}
+.tslide{flex:0 0 100%;padding:clamp(1.8rem,4vw,3rem);background:var(--paper);border:1px solid var(--line);text-align:center}
+.tslide .stars{font-size:1.05rem;margin-bottom:1rem}
+.tquote{font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.42;color:var(--sage-deep);font-weight:600;max-width:none;letter-spacing:-.01em}
+.tmeta{display:flex;align-items:center;justify-content:center;gap:.85rem;margin-top:var(--s4)}
+.tavatar{width:48px;height:48px;border-radius:50%;background:var(--sage-tint);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--sage-deep);font-size:1.05rem;flex:none}
+.tname{font-weight:800;font-size:.95rem;color:var(--ink)}
+.tsrc{font-size:.8rem;color:var(--ink-mute);font-weight:600}
+.tcar__nav{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:var(--s4)}
+.tcar__btn{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--sage-line);display:flex;align-items:center;justify-content:center;color:var(--sage-deep);transition:.18s}
+.tcar__btn:hover{background:var(--sage-tint);border-color:var(--sage)}
+.tcar__btn svg{width:18px;height:18px}
+.tdots{display:flex;gap:.5rem}
+.tdot{width:8px;height:8px;border-radius:50%;background:var(--sage-line);transition:.2s}
+.tdot.active{background:var(--sage);width:24px;border-radius:5px}
+.review-note{margin-top:1.1rem;font-size:.78rem;color:var(--ink-mute);text-align:center;max-width:none}
+
+/* ---------- corporate ---------- */
+.corp__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.8rem,4vw,3.4rem);align-items:start}
+.benefit{display:flex;gap:.85rem;padding:1.05rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.benefit:last-child{border-bottom:none}
+.benefit svg{width:22px;height:22px;color:#8ECBD1;flex:none;margin-top:3px}
+.benefit b{display:block;color:#fff;font-size:1.02rem;margin-bottom:.15rem}
+.benefit span{font-size:var(--fs-sm);color:#BBD8D7}
+.corp__how{margin-top:var(--s5);display:grid;gap:.6rem}
+.corp__how li{display:flex;gap:.7rem;font-size:var(--fs-sm);color:#BBD8D7;list-style:none}
+.corp__how b{color:#fff;font-weight:800;min-width:24px}
+
+/* ---------- forms ---------- */
+.form{background:var(--paper);border-radius:var(--r-lg);padding:clamp(1.5rem,3.5vw,2.4rem);box-shadow:var(--shadow);border:1px solid var(--line)}
+.form h3{margin-bottom:.4rem}
+.form .lede{font-size:.95rem;margin-bottom:1.4rem}
+.field{margin-bottom:1rem}
+.field label{display:block;font-weight:700;font-size:.82rem;color:var(--sage-deep);margin-bottom:.4rem;letter-spacing:.01em}
+.field input,.field select,.field textarea{width:100%;padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:12px;font-family:inherit;font-size:.97rem;color:var(--ink);background:var(--stone);transition:border-color .18s,box-shadow .18s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--sage);box-shadow:0 0 0 3px var(--sage-tint)}
+.field input.err,.field select.err{border-color:#C0492E;box-shadow:0 0 0 3px rgba(192,73,46,.12)}
+.field .msg{font-size:.74rem;color:#C0492E;margin-top:.3rem;display:none}
+.field .msg.show{display:block}
+.form__row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form__ok{display:none;text-align:center;padding:1.5rem 0}
+.form__ok.show{display:block}
+.form__ok svg{width:54px;height:54px;color:var(--sage);margin:0 auto 1rem}
+.form__ok h3{margin-bottom:.4rem}
+.form__ok p{color:var(--ink-soft);font-size:.95rem;margin-inline:auto}
+.privacy{font-size:.74rem;color:var(--ink-mute);margin-top:.8rem;text-align:center;max-width:none}
+
+/* ---------- geo / local ---------- */
+.areas{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:var(--s4);justify-content:center}
+.areachip{background:var(--paper);border:1px solid var(--sage-line);color:var(--sage-deep);font-weight:700;font-size:.9rem;padding:.55rem 1.05rem;border-radius:999px;display:inline-flex;align-items:center;gap:.45rem}
+.areachip svg{width:14px;height:14px;color:var(--sage)}
+.kwline{margin:var(--s4) auto 0;font-size:.9rem;color:var(--ink-mute);line-height:1.9;text-align:center;max-width:54rem}
+.kwline b{color:var(--sage-deep)}
+
+/* ---------- about ---------- */
+.about__list{display:grid;gap:.6rem;margin-top:var(--s4)}
+.about__list li{display:flex;gap:.7rem;font-weight:600;color:var(--ink);list-style:none;font-size:var(--fs-base)}
+.about__list svg{width:19px;height:19px;color:var(--clay);flex:none;margin-top:3px}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:48rem;margin:var(--s6) auto 0;display:grid;gap:.7rem}
+.fitem{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:border-color .2s}
+.fitem.open{border-color:var(--sage-line)}
+.fq{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.15rem 1.4rem;text-align:left;font-weight:700;font-size:1.0rem;color:var(--sage-deep)}
+.fq__ico{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--sage-line);display:flex;align-items:center;justify-content:center;flex:none;transition:.25s;color:var(--sage)}
+.fitem.open .fq__ico{background:var(--sage-deep);border-color:var(--sage-deep);color:#fff;transform:rotate(45deg)}
+.fq__ico svg{width:14px;height:14px}
+.fa{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.fa__in{padding:0 1.4rem 1.25rem;color:var(--ink-soft);font-size:var(--fs-sm)}
+.fa__in p{max-width:none}
+
+/* ---------- final cta band ---------- */
+.cta-band{background:radial-gradient(120% 120% at 100% 0%,rgba(176,122,42,.28),transparent 55%),var(--sage-deep);border-radius:var(--r-lg);padding:clamp(2.4rem,5vw,4rem);text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-band h2{color:#fff}
+.cta-band .lede{color:#BBD8D7;max-width:34rem;margin:1rem auto 0}
+.cta-band .btnrow{justify-content:center;margin-top:var(--s5)}
+
+/* ---------- footer ---------- */
+.foot{background:var(--ink);color:#B7BBB2;padding-block:3.5rem 0;font-size:var(--fs-sm)}
+.foot a:hover{color:#fff}
+.foot__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:2rem}
+.foot__brand .brand__name{color:#fff}
+.foot__brand p{margin-top:1rem;max-width:280px;color:#9AA094}
+.foot h4{color:#fff;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:1.1rem}
+.foot ul{list-style:none;display:grid;gap:.6rem}
+.foot__contact li{display:flex;gap:.6rem;align-items:flex-start;color:#9AA094}
+.foot__contact svg{width:16px;height:16px;color:#4E8E95;flex:none;margin-top:3px}
+.socials{display:flex;gap:.7rem;margin-top:1.2rem}
+.socials a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;color:#C7CBC1;transition:.18s}
+.socials a:hover{background:var(--sage);color:#fff;transform:translateY(-2px)}
+.socials svg{width:18px;height:18px}
+.mapwrap{margin-top:var(--s6);border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,.1)}
+.mapwrap iframe{width:100%;height:300px;border:0;display:block;filter:grayscale(.25) contrast(.95)}
+.ig{margin-top:var(--s6)}
+.ig__head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}
+.ig__head h4{margin:0}
+.ig__grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem}
+.ig__cell{aspect-ratio:1;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.ig__cell img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease,opacity .2s}
+.ig__cell:hover img{transform:scale(1.08)}
+.foot__bottom{margin-top:var(--s6);border-top:1px solid rgba(255,255,255,.08);padding-block:1.5rem;display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;align-items:center;color:#7E847A;font-size:.82rem}
+.foot__bottom a{color:#9AA094}
+
+/* ---------- sticky mobile CTA ---------- */
+.mobicta{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;gap:.6rem;padding:.7rem .9rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(252,250,246,.92);backdrop-filter:blur(12px);border-top:1px solid var(--line);box-shadow:0 -8px 24px -18px rgba(30,46,45,.5)}
+.mobicta .btn{flex:1;padding:.9rem .6rem;font-size:.9rem}
+.mobicta .btn--ghost{flex:0 0 52px}
+
+/* ---------- reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(22px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1!important;transform:none!important}
+  .tcar__track{transition:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .split,.corp__grid{grid-template-columns:1fr}
+  .split .media{order:-1;max-width:34rem;margin-inline:auto;width:100%;aspect-ratio:5/4}
+  .triptych{grid-template-columns:1fr;max-width:24rem;margin-inline:auto;gap:1rem}
+  .frame--side,.frame--main{aspect-ratio:5/4}
+  .steps__grid{grid-template-columns:repeat(2,1fr);gap:2rem}
+  .steps__rail{display:none}
+  .gallery{grid-template-columns:1fr 1fr}
+  .ig__grid{grid-template-columns:repeat(3,1fr)}
+  .foot__grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .navlinks,.nav__phone{display:none}
+  .burger{display:flex}
+  .nav__cta .btn{display:none}
+  .navlinks.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--paper);padding:1.2rem;gap:.4rem;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+  .navlinks.open a{padding:.6rem 0;font-size:1rem;width:100%;border-bottom:1px solid var(--line-soft)}
+  .navlinks.open .btn{display:inline-flex;margin-top:.6rem}
+  .g-2,.g-3,.form__row{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .mobicta{display:flex}
+  body{padding-bottom:76px}
+  .foot__grid{grid-template-columns:1fr}
+  .ig__grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:430px){
+  .steps__grid{grid-template-columns:1fr}
+  .trust__item{font-size:.78rem}
+}
+
+/* ====================================================================
+   RESERVATION WIZARD — extends the index.html design system
+   ==================================================================== */
+
+/* ---------- progress rail ---------- */
+.wiz{max-width:760px;margin-inline:auto}
+.prog{display:flex;align-items:center;justify-content:center;gap:0;margin-bottom:var(--s6)}
+.prog__step{display:flex;align-items:center;gap:0;flex:none}
+.prog__dot{
+  width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:var(--fs-sm);flex:none;
+  background:var(--paper);color:var(--ink-mute);border:1.5px solid var(--line);
+  transition:background .25s ease,color .25s ease,border-color .25s ease;
+}
+.prog__dot svg{width:17px;height:17px}
+.prog__step.is-active .prog__dot{background:var(--sage);color:#fff;border-color:var(--sage);box-shadow:0 0 0 5px var(--sage-tint)}
+.prog__step.is-done .prog__dot{background:var(--sage-deep);color:#fff;border-color:var(--sage-deep)}
+.prog__bar{width:clamp(18px,7vw,54px);height:2px;background:var(--line);flex:none;transition:background .25s ease}
+.prog__step.is-done + .prog__bar,.prog__bar.is-done{background:var(--sage-deep)}
+.prog__lbl{
+  display:block;text-align:center;margin-top:var(--s3);
+  font-size:var(--fs-xs);letter-spacing:.16em;text-transform:uppercase;
+  font-weight:700;color:var(--ink-mute);
+}
+
+/* ---------- panels ---------- */
+.panel{display:none;animation:slidein .38s cubic-bezier(.22,.8,.28,1) both}
+.panel.is-active{display:block}
+@keyframes slidein{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.panel{animation:none}}
+.panel__head{text-align:center;margin-bottom:var(--s5)}
+.panel__head h2{
+  font-weight:800;font-size:clamp(1.5rem,3.2vw,2.05rem);line-height:1.14;
+  letter-spacing:-.018em;color:var(--sage-deep);text-wrap:balance;
+}
+.panel__head p{margin:var(--s2) auto 0;color:var(--ink-soft);max-width:44ch}
+
+/* ---------- generic option card ---------- */
+.opt{
+  position:relative;background:var(--paper);border:1.5px solid var(--line);
+  border-radius:var(--r);padding:1.1rem .9rem;text-align:center;cursor:pointer;
+  transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease,background .18s ease;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;
+  font-family:inherit;color:var(--ink);width:100%;
+}
+.opt:hover{border-color:var(--sage-line);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.opt.is-sel{border-color:var(--sage);background:var(--sage-tint);box-shadow:0 0 0 3px rgba(2,144,158,.14)}
+.opt:disabled,.opt[aria-disabled="true"]{opacity:.34;cursor:not-allowed;transform:none;box-shadow:none;border-color:var(--line)}
+
+/* people */
+.people{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s2)}
+.people .opt{padding:1.5rem .6rem}
+.people__ico{display:flex;gap:2px;color:var(--sage);margin-bottom:.15rem}
+.people__ico svg{width:19px;height:19px}
+.people__n{font-weight:800;font-size:var(--fs-lg);color:var(--sage-deep);line-height:1}
+.people__t{font-size:var(--fs-xs);color:var(--ink-mute);letter-spacing:.04em}
+@media (max-width:560px){.people{grid-template-columns:repeat(2,1fr)}}
+
+/* dates */
+.weekhead{
+  display:flex;align-items:center;justify-content:space-between;gap:var(--s3);
+  margin-bottom:var(--s3);padding-bottom:var(--s2);border-bottom:1px solid var(--line-soft);
+}
+.weekhead h3{font-size:var(--fs-sm);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);font-weight:700}
+.dates{display:grid;grid-template-columns:repeat(6,1fr);gap:var(--s2)}
+.dates .opt{padding:.85rem .3rem;gap:.15rem}
+.date__dow{font-size:var(--fs-xs);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);font-weight:700}
+.date__d{font-weight:800;font-size:var(--fs-md);color:var(--sage-deep);line-height:1.05}
+.date__m{font-size:.68rem;color:var(--ink-mute);letter-spacing:.03em}
+.opt.is-sel .date__dow,.opt.is-sel .date__m{color:var(--sage-deep)}
+@media (max-width:720px){.dates{grid-template-columns:repeat(3,1fr)}}
+
+/* times */
+.slotgrp + .slotgrp{margin-top:var(--s4)}
+.slotgrp__t{
+  display:flex;align-items:center;gap:.6rem;font-size:var(--fs-xs);font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:var(--s2);
+}
+.slotgrp__t::after{content:"";flex:1;height:1px;background:var(--sage-line);opacity:.55}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:var(--s2)}
+.slots .opt{padding:.85rem .4rem;font-weight:700;color:var(--sage-deep);font-size:var(--fs-base)}
+.slot__sub{font-size:.66rem;font-weight:400;color:var(--ink-mute);letter-spacing:.03em}
+
+/* summary strip */
+.sumbar{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.5rem .9rem;
+  background:var(--sage-tint);border:1px solid var(--sage-line);border-radius:999px;
+  padding:.6rem 1.3rem;margin-bottom:var(--s5);font-size:var(--fs-sm);color:var(--sage-deep);
+  font-weight:700;max-width:fit-content;margin-inline:auto;
+}
+.sumbar span{display:inline-flex;align-items:center;gap:.4rem}
+.sumbar svg{width:15px;height:15px;flex:none;opacity:.8}
+.sumbar .sep{width:1px;height:14px;background:var(--sage-line);display:inline-block}
+@media (max-width:520px){.sumbar{border-radius:var(--r);width:100%;max-width:none}.sumbar .sep{display:none}}
+
+/* nav row */
+.wiznav{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);margin-top:var(--s6)}
+.wiznav .spacer{flex:1}
+.linkback{
+  display:inline-flex;align-items:center;gap:.45rem;font-weight:700;font-size:var(--fs-sm);
+  color:var(--ink-mute);transition:color .18s ease;background:none;border:none;font-family:inherit;cursor:pointer;padding:.5rem 0;
+}
+.linkback:hover{color:var(--sage-deep)}
+.linkback svg{width:16px;height:16px}
+
+/* tally host */
+.tallybox{
+  background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);
+  padding:clamp(1.1rem,3vw,2rem);box-shadow:var(--shadow-sm);
+}
+.tallybox iframe{width:100%;border:0;min-height:520px;display:block;background:transparent}
+.tallywarn{
+  border:1.5px dashed var(--ember);background:#FDF6EC;color:var(--ember-dark);
+  border-radius:var(--r);padding:1.1rem 1.3rem;font-size:var(--fs-sm);line-height:1.55;
+}
+.tallywarn code{background:rgba(162,102,26,.12);padding:.1rem .35rem;border-radius:4px;font-size:.9em}
+
+/* ---------- confirmation ---------- */
+.done{text-align:center;max-width:640px;margin-inline:auto}
+.done__seal{
+  width:82px;height:82px;border-radius:50%;margin:0 auto var(--s4);
+  display:grid;place-items:center;background:var(--sage);color:#fff;
+  box-shadow:0 0 0 9px var(--sage-tint);animation:pop .5s cubic-bezier(.2,1.3,.4,1) both;
+}
+.done__seal svg{width:40px;height:40px}
+@keyframes pop{from{transform:scale(.4);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.done__seal{animation:none}}
+.done__msg{font-size:clamp(1.06rem,1.7vw,1.2rem);color:var(--ink-soft);line-height:1.7;margin-inline:auto}
+.done__card{
+  background:var(--paper);border:1.5px solid var(--sage-line);border-radius:var(--r-lg);
+  padding:clamp(1.3rem,3.4vw,2.1rem);box-shadow:var(--shadow-sm);margin-top:var(--s5);text-align:left;
+}
+.done__when{
+  display:flex;align-items:center;gap:.9rem;justify-content:center;flex-wrap:wrap;
+  font-weight:800;color:var(--sage-deep);font-size:var(--fs-md);text-align:center;
+}
+.done__when svg{width:22px;height:22px;flex:none;color:var(--sage)}
+.checklist{list-style:none;margin-top:var(--s4);display:grid;gap:.7rem;max-width:24rem;margin-inline:auto;text-align:left}
+.checklist li{display:flex;align-items:flex-start;gap:.65rem;color:var(--ink-soft);font-size:var(--fs-base)}
+.checklist svg{width:19px;height:19px;flex:none;color:var(--sage);margin-top:.16rem}
+.checklist strong{color:var(--ink);font-weight:700}
+
+/* action tiles */
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s2);margin-top:var(--s5)}
+.act{
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:.6rem;
+  background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r);
+  padding:1.3rem .8rem;text-align:center;cursor:pointer;font-family:inherit;color:var(--ink);
+  transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease;width:100%;
+}
+.act:hover{border-color:var(--sage-line);transform:translateY(-3px);box-shadow:var(--shadow-sm)}
+.act__ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--sage-tint);color:var(--sage-deep);flex:none}
+.act__ico svg{width:22px;height:22px}
+.act--viber .act__ico{background:#7360F2;color:#fff}
+.act__t{font-weight:700;font-size:var(--fs-sm);color:var(--sage-deep);line-height:1.25}
+.act__s{font-size:var(--fs-xs);color:var(--ink-mute);line-height:1.4}
+@media (max-width:620px){.acts{grid-template-columns:1fr}.act{flex-direction:row;text-align:left;padding:1rem}.act__ico{width:40px;height:40px}}
+
+/* page shell */
+.resmain{padding-block:clamp(2.4rem,6vw,4.4rem) clamp(3.4rem,8vw,6rem)}
+.backhome{display:inline-flex;align-items:center;gap:.45rem;font-size:var(--fs-sm);font-weight:700;color:var(--ink-mute);margin-bottom:var(--s5);transition:color .18s ease}
+.backhome:hover{color:var(--sage-deep)}
+.backhome svg{width:16px;height:16px}
+.reshead{text-align:center;margin-bottom:var(--s6)}
+.foot--slim{padding-block:var(--s5)}
+.foot--slim .foot__bottom{border:0;margin:0;padding:0}
+</style>
+</head>
+
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a href="index.html" class="brand" aria-label="MV Pilates Studio — Αρχική">
+      <img class="brand__mark" src="logo.png" alt="MV Pilates Studio λογότυπο" width="44" height="44">
+      <span class="brand__txt">
+        <span class="brand__name">MV Pilates</span>
+        <span class="brand__sub">Studio · Μάνδρα</span>
+      </span>
+    </a>
+    <div class="nav__cta" style="margin-left:auto">
+      <a href="tel:+302110082697" class="nav__phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        21 1008 2697
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="resmain">
+  <div class="wrap">
+
+    <!-- ===== WIZARD ===== -->
+    <div id="wizard">
+      <div class="reshead">
+        <a href="index.html" class="backhome">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Επιστροφή στην αρχική
+        </a>
+        <span class="eyebrow" style="justify-content:center">Online Κράτηση</span>
+        <h1 class="display mt-2" style="font-size:clamp(2rem,4.6vw,3rem)">Δωρεάν δοκιμαστική προπόνηση</h1>
+        <p class="lede mt-3" style="margin-inline:auto;max-width:48ch">Τέσσερα γρήγορα βήματα και η θέση σας είναι κλεισμένη. Χωρίς χρέωση, χωρίς δέσμευση.</p>
+      </div>
+
+      <div class="wiz">
+        <!-- progress -->
+        <div>
+          <div class="prog" id="prog">
+            <div class="prog__step is-active" data-s="1"><div class="prog__dot">1</div></div>
+            <div class="prog__bar"></div>
+            <div class="prog__step" data-s="2"><div class="prog__dot">2</div></div>
+            <div class="prog__bar"></div>
+            <div class="prog__step" data-s="3"><div class="prog__dot">3</div></div>
+            <div class="prog__bar"></div>
+            <div class="prog__step" data-s="4"><div class="prog__dot">4</div></div>
+          </div>
+          <span class="prog__lbl" id="progLbl">Βήμα 1 από 4 · Άτομα</span>
+        </div>
+
+        <!-- ---------- STEP 1 · PEOPLE ---------- -->
+        <section class="panel is-active mt-6" data-panel="1" aria-labelledby="h1s">
+          <div class="panel__head">
+            <h2 id="h1s">Πόσα άτομα θα έρθετε;</h2>
+            <p>Επιλέξτε τον αριθμό των ατόμων για τη δοκιμαστική συνεδρία.</p>
+          </div>
+          <div class="people" id="people"></div>
+          <div class="wiznav">
+            <a href="index.html" class="linkback">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Ακύρωση
+            </a>
+            <div class="spacer"></div>
+          </div>
+        </section>
+
+        <!-- ---------- STEP 2 · DATE ---------- -->
+        <section class="panel" data-panel="2" aria-labelledby="h2s">
+          <div class="sumbar" id="sum2"></div>
+          <div class="panel__head">
+            <h2 id="h2s">Ποια ημέρα σας βολεύει;</h2>
+            <p>Διαθέσιμες ημερομηνίες για τις επόμενες δύο εβδομάδες, Δευτέρα έως Σάββατο.</p>
+          </div>
+          <div id="dates"></div>
+          <div class="wiznav">
+            <button class="linkback" data-back="1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Πίσω
+            </button>
+            <div class="spacer"></div>
+          </div>
+        </section>
+
+        <!-- ---------- STEP 3 · TIME ---------- -->
+        <section class="panel" data-panel="3" aria-labelledby="h3s">
+          <div class="sumbar" id="sum3"></div>
+          <div class="panel__head">
+            <h2 id="h3s">Επιλέξτε ώρα</h2>
+            <p>Κάθε συνεδρία διαρκεί μία ώρα. Επιλέξτε την ώρα έναρξης.</p>
+          </div>
+          <div id="slots"></div>
+          <div class="wiznav">
+            <button class="linkback" data-back="2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Πίσω
+            </button>
+            <div class="spacer"></div>
+          </div>
+        </section>
+
+        <!-- ---------- STEP 4 · DETAILS (Tally) ---------- -->
+        <section class="panel" data-panel="4" aria-labelledby="h4s">
+          <div class="sumbar" id="sum4"></div>
+          <div class="panel__head">
+            <h2 id="h4s">Τα στοιχεία σας</h2>
+            <p>Συμπληρώστε τα στοιχεία επικοινωνίας για να ολοκληρωθεί η κράτηση.</p>
+          </div>
+          <div class="tallybox" id="tallyBox"></div>
+          <div class="wiznav">
+            <button class="linkback" data-back="3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Πίσω
+            </button>
+            <div class="spacer"></div>
+            <button class="linkback" id="manualDone" style="color:var(--sage)">
+              Ολοκλήρωσα τη φόρμα
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ===== CONFIRMATION ===== -->
+    <div id="confirm" style="display:none">
+      <div class="done">
+        <div class="done__seal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h1 class="display" style="font-size:clamp(1.7rem,3.8vw,2.5rem)">Η πρώτη σας δωρεάν προπόνηση καταχωρήθηκε επιτυχώς!</h1>
+        <p class="done__msg mt-3">Σύντομα θα επικοινωνήσουμε μαζί σας.</p>
+
+        <div class="done__card">
+          <div class="done__when" id="doneWhen"></div>
+          <p style="text-align:center;margin:var(--s4) auto 0;font-weight:700;color:var(--ink)">Μην ξεχάσετε:</p>
+          <ul class="checklist">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Αθλητική αμφίεση</strong></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Μια πετσέτα</strong></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Ένα ζευγάρι καθαρές κάλτσες</strong></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Θετική διάθεση</strong></span></li>
+          </ul>
+        </div>
+
+        <div class="acts">
+          <button class="act" id="actCal">
+            <span class="act__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M12 14v4M10 16h4" stroke-linecap="round"/></svg></span>
+            <span><span class="act__t">Προσθήκη στο ημερολόγιο</span><br><span class="act__s">Κατεβάστε το αρχείο .ics</span></span>
+          </button>
+          <a class="act act--viber" href="viber://chat?number=%2B306907061173" id="actViber">
+            <span class="act__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span><span class="act__t">Μήνυμα στο Viber</span><br><span class="act__s">Ρωτήστε μας οτιδήποτε</span></span>
+          </a>
+          <a class="act" href="https://www.google.com/maps/dir/?api=1&destination=%CE%92%CE%B1%CE%B3%CE%B3%CE%AD%CE%BB%CE%B7%20%CE%9A%CE%BF%CF%81%CE%BF%CF%80%CE%BF%CF%8D%CE%BB%CE%B7%2070%2C%20%CE%9C%CE%AC%CE%BD%CE%B4%CF%81%CE%B1%2019600" target="_blank" rel="noopener">
+            <span class="act__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span><span class="act__t">Πώς θα μας βρείτε</span><br><span class="act__s">Βαγγέλη Κοροπούλη 70, Μάνδρα</span></span>
+          </a>
+        </div>
+
+        <a href="index.html" class="linkback mt-5" style="justify-content:center">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Επιστροφή στην αρχική
+        </a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="foot foot--slim">
+  <div class="wrap">
+    <div class="foot__bottom" style="display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center;justify-content:center;text-align:center">
+      <span>© <span id="yr"></span> MV Pilates Studio · Βαγγέλη Κοροπούλη 70, Μάνδρα 19600</span>
+      <a href="privacy-policy.html">Πολιτική Απορρήτου</a>
+      <a href="terms.html">Όροι Χρήσης</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ==================================================================
+     ΡΥΘΜΙΣΕΙΣ — ΑΛΛΑΞΤΕ ΜΟΝΟ ΑΥΤΟ ΤΟ ΜΠΛΟΚ
+     ------------------------------------------------------------------
+     TALLY_FORM_ID:
+       Το ID της νέας φόρμας Tally (π.χ. στο https://tally.so/r/wAbC12
+       το ID είναι "wAbC12"). Η φόρμα πρέπει να έχει:
+         · Ερωτήσεις: Ονοματεπώνυμο, Τηλέφωνο, Email, Σχόλια
+         · Hidden fields (Settings → Hidden fields) με ΑΚΡΙΒΩΣ αυτά
+           τα ονόματα:  atoma · imerominia · ora · sinopsi
+       Τα hidden fields συμπληρώνονται αυτόματα από τη σελίδα.
+     ================================================================== */
+  var TALLY_FORM_ID = "vGvx8X";     // ← βάλτε εδώ το ID της φόρμας
+  var STUDIO_ADDRESS = "Βαγγέλη Κοροπούλη 70, Μάνδρα 19600";
+  var SESSION_MINUTES = 60;
+
+  /* ---------- opening hours (24h, start times of 1-hour slots) ------- */
+  //  Δευτέρα–Παρασκευή: 08:00–13:00 και 15:00–21:00
+  //  Σάββατο:           09:00–13:00
+  var HOURS = {
+    weekday:{ morning:[8,9,10,11,12], evening:[15,16,17,18,19,20] },
+    saturday:{ morning:[9,10,11,12],  evening:[] }
+  };
+
+  var DOW  = ["Κυριακή","Δευτέρα","Τρίτη","Τετάρτη","Πέμπτη","Παρασκευή","Σάββατο"];
+  var DOW3 = ["Κυρ","Δευ","Τρί","Τετ","Πέμ","Παρ","Σάβ"];
+  var MON  = ["Ιανουαρίου","Φεβρουαρίου","Μαρτίου","Απριλίου","Μαΐου","Ιουνίου",
+              "Ιουλίου","Αυγούστου","Σεπτεμβρίου","Οκτωβρίου","Νοεμβρίου","Δεκεμβρίου"];
+  var MON3 = ["Ιαν","Φεβ","Μαρ","Απρ","Μαΐ","Ιουν","Ιουλ","Αυγ","Σεπ","Οκτ","Νοε","Δεκ"];
+
+  var state = { people:null, date:null, time:null, step:1 };
+
+  var $  = function(s,r){ return (r||document).querySelector(s); };
+  var $$ = function(s,r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+  var pad = function(n){ return (n<10?"0":"")+n; };
+  var ymd = function(d){ return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate()); };
+
+  /* ================== ΒΗΜΑ 1 · ΑΤΟΜΑ ================== */
+  var PEOPLE_LABEL = ["", "άτομο", "άτομα", "άτομα", "άτομα"];
+  function buildPeople(){
+    var host = $("#people"); host.innerHTML = "";
+    for(var n=1;n<=4;n++){
+      (function(n){
+        var b = document.createElement("button");
+        b.type="button"; b.className="opt"; b.setAttribute("aria-pressed","false");
+        var ico=""; for(var i=0;i<n;i++){
+          ico += '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><circle cx="12" cy="8" r="3.4"/><path d="M4.6 20a7.4 7.4 0 0 1 14.8 0" stroke-linecap="round"/></svg>';
+        }
+        b.innerHTML = '<span class="people__ico">'+ico+'</span>'+
+                      '<span class="people__n">'+n+'</span>'+
+                      '<span class="people__t">'+PEOPLE_LABEL[n]+'</span>';
+        b.addEventListener("click", function(){
+          state.people = n;
+          $$("#people .opt").forEach(function(o){ o.classList.remove("is-sel"); o.setAttribute("aria-pressed","false"); });
+          b.classList.add("is-sel"); b.setAttribute("aria-pressed","true");
+          setTimeout(function(){ go(2); }, 190);
+        });
+        host.appendChild(b);
+      })(n);
+    }
+  }
+
+  /* ================== ΒΗΜΑ 2 · ΗΜΕΡΟΜΗΝΙΑ ================== */
+  // Επόμενες 2 εβδομάδες (14 ημέρες από αύριο), Δευτέρα–Σάββατο.
+  function availableDates(){
+    var out=[], today=new Date(); today.setHours(0,0,0,0);
+    for(var i=1;i<=14;i++){
+      var d=new Date(today); d.setDate(today.getDate()+i);
+      if(d.getDay()===0) continue;           // Κυριακή κλειστά
+      out.push(d);
+    }
+    return out;
+  }
+  function buildDates(){
+    var host=$("#dates"); host.innerHTML="";
+    var list=availableDates(), groups=[], cur=null;
+    list.forEach(function(d){
+      // ομαδοποίηση ανά εβδομάδα (Δευτέρα = αρχή)
+      var monday=new Date(d); monday.setDate(d.getDate()-((d.getDay()+6)%7));
+      var key=ymd(monday);
+      if(!cur||cur.key!==key){ cur={key:key,start:monday,days:[]}; groups.push(cur); }
+      cur.days.push(d);
+    });
+    groups.forEach(function(g,gi){
+      var wrap=document.createElement("div");
+      if(gi>0) wrap.style.marginTop="var(--s5)";
+      var a=g.days[0], b=g.days[g.days.length-1];
+      var rangeTxt = a.getDate()+(a.getMonth()!==b.getMonth()? " "+MON3[a.getMonth()] : "")+
+                     " – "+b.getDate()+" "+MON3[b.getMonth()];
+      var WEEKLBL=["Αυτή την εβδομάδα","Επόμενη εβδομάδα","Μεθεπόμενη εβδομάδα"];
+      wrap.innerHTML='<div class="weekhead"><h3>'+(WEEKLBL[gi]||"Επόμενες ημέρες")+
+                     '</h3><span style="font-size:var(--fs-sm);color:var(--ink-mute)">'+rangeTxt+'</span></div>'+
+                     '<div class="dates"></div>';
+      var grid=$(".dates",wrap);
+      g.days.forEach(function(d){
+        var b2=document.createElement("button");
+        b2.type="button"; b2.className="opt"; b2.setAttribute("aria-pressed","false");
+        b2.innerHTML='<span class="date__dow">'+DOW3[d.getDay()]+'</span>'+
+                     '<span class="date__d">'+d.getDate()+'</span>'+
+                     '<span class="date__m">'+MON3[d.getMonth()]+'</span>';
+        b2.addEventListener("click", function(){
+          state.date=new Date(d); state.time=null;
+          $$("#dates .opt").forEach(function(o){ o.classList.remove("is-sel"); o.setAttribute("aria-pressed","false"); });
+          b2.classList.add("is-sel"); b2.setAttribute("aria-pressed","true");
+          setTimeout(function(){ go(3); }, 190);
+        });
+        grid.appendChild(b2);
+      });
+      host.appendChild(wrap);
+    });
+  }
+
+  /* ================== ΒΗΜΑ 3 · ΩΡΑ ================== */
+  function slotsFor(d){
+    return d.getDay()===6 ? HOURS.saturday : HOURS.weekday;
+  }
+  function buildSlots(){
+    var host=$("#slots"); host.innerHTML="";
+    if(!state.date) return;
+    var conf=slotsFor(state.date);
+    var groups=[
+      {t:"Πρωί",   list:conf.morning},
+      {t:"Απόγευμα", list:conf.evening}
+    ];
+    groups.forEach(function(g){
+      if(!g.list.length) return;
+      var sec=document.createElement("div"); sec.className="slotgrp";
+      sec.innerHTML='<div class="slotgrp__t">'+g.t+'</div><div class="slots"></div>';
+      var grid=$(".slots",sec);
+      g.list.forEach(function(h){
+        var b=document.createElement("button");
+        b.type="button"; b.className="opt"; b.setAttribute("aria-pressed","false");
+        b.innerHTML=pad(h)+':00<span class="slot__sub">έως '+pad(h+1)+':00</span>';
+        b.addEventListener("click", function(){
+          state.time=h;
+          $$("#slots .opt").forEach(function(o){ o.classList.remove("is-sel"); o.setAttribute("aria-pressed","false"); });
+          b.classList.add("is-sel"); b.setAttribute("aria-pressed","true");
+          setTimeout(function(){ go(4); }, 190);
+        });
+        grid.appendChild(b);
+      });
+      host.appendChild(sec);
+    });
+  }
+
+  /* ================== ΠΕΡΙΛΗΨΗ ================== */
+  function dateLong(d){ return DOW[d.getDay()]+" "+d.getDate()+" "+MON[d.getMonth()]; }
+  function summaryHTML(){
+    var bits=[];
+    if(state.people) bits.push('<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><circle cx="12" cy="8" r="3.4"/><path d="M4.6 20a7.4 7.4 0 0 1 14.8 0" stroke-linecap="round"/></svg>'+state.people+' '+PEOPLE_LABEL[state.people]+'</span>');
+    if(state.date)   bits.push('<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18" stroke-linecap="round"/></svg>'+dateLong(state.date)+'</span>');
+    if(state.time!==null&&state.time!==undefined) bits.push('<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>'+pad(state.time)+':00–'+pad(state.time+1)+':00</span>');
+    return bits.join('<span class="sep"></span>');
+  }
+  function paintSummary(){
+    var h=summaryHTML();
+    ["#sum2","#sum3","#sum4"].forEach(function(sel){
+      var el=$(sel); if(el){ el.innerHTML=h; el.style.display=h?"":"none"; }
+    });
+  }
+
+  /* ================== ΒΗΜΑ 4 · TALLY ================== */
+  function bookingSummaryText(){
+    return state.people+" "+PEOPLE_LABEL[state.people]+" · "+dateLong(state.date)+" · "+
+           pad(state.time)+":00–"+pad(state.time+1)+":00";
+  }
+  function mountTally(){
+    var box=$("#tallyBox");
+    if(!TALLY_FORM_ID){
+      box.innerHTML='<div class="tallywarn"><strong>Λείπει το ID της φόρμας Tally.</strong><br>'+
+        'Ανοίξτε το <code>reservation.html</code>, βρείτε τη γραμμή <code>var TALLY_FORM_ID = "";</code> '+
+        'και συμπληρώστε το ID της νέας σας φόρμας (π.χ. <code>"wAbC12"</code> από το '+
+        '<code>https://tally.so/r/wAbC12</code>).<br><br>Η φόρμα χρειάζεται hidden fields με ονόματα: '+
+        '<code>atoma</code>, <code>imerominia</code>, <code>ora</code>, <code>sinopsi</code>.</div>';
+      return;
+    }
+    var q = "?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          + "&atoma="      + encodeURIComponent(state.people)
+          + "&imerominia=" + encodeURIComponent(ymd(state.date))
+          + "&ora="        + encodeURIComponent(pad(state.time)+":00")
+          + "&sinopsi="    + encodeURIComponent(bookingSummaryText());
+    box.innerHTML='<iframe data-tally-src="https://tally.so/embed/'+TALLY_FORM_ID+q+'" '+
+                  'loading="lazy" title="Στοιχεία κράτησης" height="520"></iframe>';
+    if(window.Tally && window.Tally.loadEmbeds){ window.Tally.loadEmbeds(); }
+  }
+  // Tally στέλνει postMessage όταν υποβληθεί η φόρμα
+  window.addEventListener("message", function(e){
+    var d=e.data;
+    try{ if(typeof d==="string") d=JSON.parse(d); }catch(err){ return; }
+    if(d && (d.event==="Tally.FormSubmitted" || d.event==="Tally.FormSubmit")) showConfirm();
+  });
+  $("#manualDone").addEventListener("click", showConfirm);
+
+  /* ================== ΠΛΟΗΓΗΣΗ ================== */
+  var LBL=["","Άτομα","Ημερομηνία","Ώρα","Στοιχεία"];
+  function go(n){
+    state.step=n;
+    $$(".panel").forEach(function(p){ p.classList.toggle("is-active", +p.dataset.panel===n); });
+    $$("#prog .prog__step").forEach(function(s){
+      var i=+s.dataset.s;
+      s.classList.toggle("is-active", i===n);
+      s.classList.toggle("is-done",  i<n);
+      var dot=$(".prog__dot",s);
+      dot.innerHTML = i<n
+        ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+        : i;
+    });
+    $$("#prog .prog__bar").forEach(function(b,i){ b.classList.toggle("is-done", i+1 < n); });
+    $("#progLbl").textContent="Βήμα "+n+" από 4 · "+LBL[n];
+    paintSummary();
+    if(n===3) buildSlots();
+    if(n===4) mountTally();
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+  $$("[data-back]").forEach(function(b){
+    b.addEventListener("click", function(){ go(+b.dataset.back); });
+  });
+
+  /* ================== ΕΠΙΒΕΒΑΙΩΣΗ ================== */
+  function showConfirm(){
+    $("#wizard").style.display="none";
+    $("#confirm").style.display="";
+    $("#doneWhen").innerHTML =
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18" stroke-linecap="round"/></svg>'+
+      dateLong(state.date)+', '+pad(state.time)+':00–'+pad(state.time+1)+':00'+
+      ' &nbsp;·&nbsp; '+state.people+' '+PEOPLE_LABEL[state.people];
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+
+  /* ---------- .ics ---------- */
+  function icsStamp(d){
+    return d.getUTCFullYear()+pad(d.getUTCMonth()+1)+pad(d.getUTCDate())+"T"+
+           pad(d.getUTCHours())+pad(d.getUTCMinutes())+"00Z";
+  }
+  $("#actCal").addEventListener("click", function(){
+    if(!state.date) return;
+    var start=new Date(state.date); start.setHours(state.time,0,0,0);
+    var end=new Date(start.getTime()+SESSION_MINUTES*60000);
+    var ics=[
+      "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//MV Pilates Studio//Reservation//EL",
+      "CALSCALE:GREGORIAN","METHOD:PUBLISH","BEGIN:VEVENT",
+      "UID:"+Date.now()+"@mvpilates.gr",
+      "DTSTAMP:"+icsStamp(new Date()),
+      "DTSTART:"+icsStamp(start),
+      "DTEND:"+icsStamp(end),
+      "SUMMARY:Δωρεάν δοκιμαστική προπόνηση — MV Pilates Studio",
+      "LOCATION:"+STUDIO_ADDRESS,
+      "DESCRIPTION:Μην ξεχάσετε: αθλητική αμφίεση\\, μια πετσέτα\\, ένα ζευγάρι καθαρές κάλτσες\\, θετική διάθεση.",
+      "BEGIN:VALARM","TRIGGER:-PT2H","ACTION:DISPLAY",
+      "DESCRIPTION:Προπόνηση στο MV Pilates σε 2 ώρες","END:VALARM",
+      "END:VEVENT","END:VCALENDAR"
+    ].join("\r\n");
+    var blob=new Blob([ics],{type:"text/calendar;charset=utf-8"});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement("a");
+    a.href=url; a.download="mv-pilates-"+ymd(state.date)+".ics";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1500);
+  });
+
+  /* ---------- Viber με προσυμπληρωμένο μήνυμα ---------- */
+  $("#actViber").addEventListener("click", function(){
+    if(!state.date) return;
+    var msg="Γεια σας! Έκλεισα δωρεάν δοκιμαστική προπόνηση για "+
+            dateLong(state.date)+", "+pad(state.time)+":00 ("+state.people+" "+PEOPLE_LABEL[state.people]+").";
+    this.href="viber://chat?number=%2B306907061173&text="+encodeURIComponent(msg);
+  });
+
+  /* ---------- init ---------- */
+  $("#yr").textContent=new Date().getFullYear();
+  buildPeople(); buildDates(); go(1);
+})();
+</script>
+<script async src="https://tally.so/widgets/embed.js"></script>
+</body>
+</html>
